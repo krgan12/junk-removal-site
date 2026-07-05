@@ -30,7 +30,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {/* <Header /> */}
-        {children}
+        {children} 
         {/* Footer is different for ALL pages */}
       </body>
     </html>
