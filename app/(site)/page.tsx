@@ -5,7 +5,7 @@ import HomeFooter from "@/components/HomeFooter";
 import Image from "next/image";
 import Link from "next/link";
 
-export default async function Home() {
+export default function Page() {
 
   // const homeData = await client.fetch(homeQuery);
 
