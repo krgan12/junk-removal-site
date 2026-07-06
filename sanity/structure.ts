@@ -16,4 +16,4 @@ export const structure: StructureResolver = (S) =>
       ...S.documentTypeListItems().filter(
         (item) => item.getId() && ![ 'home', 'contactus', 'services', 'servicearea'].includes(item.getId()!),
       ),
-    ])
+    ]) 
