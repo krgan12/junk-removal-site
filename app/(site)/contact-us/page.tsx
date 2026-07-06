@@ -20,7 +20,7 @@ function page() {
           
           <h1 className='text-center text-[44px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>JunkBGone Junk Removal - Get a free Quote</h1>
           
-          <p className='mt-8 text-center max-w-[850px] text-[19px] leading-8.5 text-[#222]'>Get a free junk removal quote! Tell us your city, nearest intersection, and what you need removed
+          <p className='mt-6 text-center max-w-[850px] text-[19px] leading-8.5 text-[#222]'>Get a free junk removal quote! Tell us your city, nearest intersection, and what you need removed
           (example: 1 couch, 10 bags). You can also text the details to: <span className='underline cursor-pointer text-[#4d69b3]'>905-781-4046.</span>
           </p>
           <form className='mt-10 flex w-full flex-col max-w-[610px]'>
@@ -46,13 +46,13 @@ function page() {
               <input placeholder='Enter your phone number' className='h-[50px] w-full border rounded-sm border-[#dddddd] px-4 text-[16px] placeholder:text-[#777] outline-none transition-colors focus:border-[#bdbdbd]' />
 
               <label className="mb-2 mt-4 block text-[16px]">Message</label>
-              <textarea rows={4} placeholder='Enter your message' className='min-h-[90px] w-full
+              <textarea rows={2} placeholder='Enter your message' className='min-h-[45px] w-full
                border rounded-sm border-[#dddddd] px-4 py-3 text-[16px] placeholder:text-[#777]
               outline-none transition-colors focus:border-[#bdbdbd]'>
 
               </textarea>
 
-              <div className='mt-4 h-[75px] w-[304px] border border-[#d9d9d9] bg-white'></div>
+              <div className='mt-4 h-[55px] w-[304px] border border-[#d9d9d9] bg-white'></div>
               
               <button type='submit' className='hover:cursor-pointer mt-6 h-[48px] w-[120px] bg-[#e32726] text-[18px] font-normal text-white transition-colors hover:bg-[#cf201f]'>Submit</button>
             </div>
