@@ -10,7 +10,9 @@ function page() {
   const [email, setEmail] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
 
-  const SERVICES_OFFSET = 14;
+  const SERVICES_OFFSET = 10;
+
+  const AREAS_OFFSET = 15;
 
   return (
     <div className='min-h-screen'>
@@ -74,7 +76,7 @@ function page() {
                 Affordable Waste Removal Services
               </p>
 
-              <h2 className='mt-5 text-[45px] leading-[1.15] font-normal tracking-[-1px]
+              <h2 className='mt-5 text-[45px] leading-[1.15] font-md tracking-[-1px]
               text-[#222]'>
                 Flexible Services for your Specific Needs
               </h2>
@@ -115,9 +117,6 @@ function page() {
 
               </div>
 
-              
-
-
           </div>
 
           <div className='relative h-[440px] w-[570px] overflow-hidden'>
@@ -125,6 +124,35 @@ function page() {
           </div>
 
         </div>
+
+        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+
+          <div className='flex flex-col items-center ml-10'>
+            
+            <p className="uppercase ml-7 tracking-[5px] text-[15px] font-medium text-[#6f6f6f] text-center">
+              Garbage Removal Services in Oakville & SURROUNDING AREAS
+            </p>
+
+            <h2 className='mt-5 ml-2 text-[45px] leading-[1.15] font-medium tracking-[-1px]
+              text-[#222]'>
+                Junk Removal Oakville | JunkBGone
+            </h2>
+          </div>
+
+        </section>
+
+        {/* <div className='mx-auto flex max-w-[1250px] justify-between gap-20 items-center'>
+
+          <div className='max-w-[1000px]'>
+
+            <p className="uppercase tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
+              Garbage Removal Services in Oakville & SURROUNDING AREAS
+            </p>
+
+          </div>
+
+        </div> */}
+
         <ContactUsFooter />
         <ContactUsFooter />
         <ContactUsFooter />
