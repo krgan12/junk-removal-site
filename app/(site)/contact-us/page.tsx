@@ -125,9 +125,9 @@ function page() {
 
         </div>
 
-        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+        <section className='mx-auto max-w-[1250px] ml-58' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
 
-          <div className='flex flex-col items-center ml-10'>
+          <div className='flex flex-col items-center'>
             
             <p className="uppercase ml-7 tracking-[5px] text-[15px] font-medium text-[#6f6f6f] text-center">
               Garbage Removal Services in Oakville & SURROUNDING AREAS
@@ -137,21 +137,17 @@ function page() {
               text-[#222]'>
                 Junk Removal Oakville | JunkBGone
             </h2>
+
+            <div className='mt-5 max-w-[1000px] space-y-8 font-normal'>
+              
+              <p className='text-center text-[17px] leading-7.5 text-[#666]'>Looking for professional waste removal in Oakville and surrounding areas? JunkBGone offers fast, dependable junk hauling services for residential and commercial properties throughout Hamilton and nearby areas. Whether you need furniture disposal, construction debris removal, yard waste cleanup, or a full property cleanout, our experienced team is ready to handle it all.</p>
+              <p className='text-center text-[17px] leading-7.5 text-[#666]'>We provide flexible scheduling, competitive rates, and eco-friendly disposal practices, including recycling and donating reusable items whenever possible. Contact us today for a free junk removal estimate in Hamilton and discover how easy it is to reclaim your space.</p>
+              <p className='text-center text-[17px] leading-7.5 text-[#666]'>We proudly serve the Greater Oakville area, including Oakville, Brantford, Caledonia, St. Catharines, and everywhere in between.</p>
+
+            </div>
           </div>
 
         </section>
-
-        {/* <div className='mx-auto flex max-w-[1250px] justify-between gap-20 items-center'>
-
-          <div className='max-w-[1000px]'>
-
-            <p className="uppercase tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
-              Garbage Removal Services in Oakville & SURROUNDING AREAS
-            </p>
-
-          </div>
-
-        </div> */}
 
         <ContactUsFooter />
         <ContactUsFooter />
