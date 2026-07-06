@@ -12,7 +12,9 @@ function page() {
 
   const SERVICES_OFFSET = 10;
 
-  const AREAS_OFFSET = 15;
+  const AREAS_OFFSET = 10;
+
+  const GOOGLE_REVS_OFFSET = 12;
 
   return (
     <div className='min-h-screen'>
@@ -125,7 +127,7 @@ function page() {
 
         </div>
 
-        <section className='mx-auto max-w-[1250px] ml-58' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+        <section className='mx-auto max-w-[1250px] ml-58' style={{ paddingTop: `${AREAS_OFFSET}vh`}}>
 
           <div className='flex flex-col items-center'>
             
@@ -148,6 +150,15 @@ function page() {
           </div>
 
         </section>
+
+
+        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
+            <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
+        </section>
+
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+
+        
 
         <ContactUsFooter />
         <ContactUsFooter />
