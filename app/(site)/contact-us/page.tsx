@@ -1,6 +1,7 @@
 'use client'
 import ContactUsFooter from '@/components/ContactUsFooter'
 import React, { useState } from 'react'
+import Image from 'next/image';
 
 function page() {
 
@@ -88,9 +89,39 @@ function page() {
                 {/* Leading-7 or ADJUST later on */}
                 <p className='leading-7.5 max-w-[550px]'>Household waste removal, furniture removal, construction cleanup, dump runs, yard waste removal, garbage removal, hot tub removal, piano removal, concrete disposal, clean fill (dirt) disposal, asphalt disposal, roofing disposal, debris removal, bulk landscape material delivery, and more.</p>
               </p>
+              
+              <p className='text-[17.5px] mt-6 font-semibold text-[#767676]'>Flexible options to fit your needs:</p>
+              <ul className='mt-6 space-y-5 pl-6 text-[17.5px] text-[#767676] list-disc'>
+                
+                <li className=''>
+                  <span className='font-bold'>Small to Medium Loads:</span> 6.5 ft pickup truck bed
+                </li>
+
+                <li className=''>
+                 <span className='font-bold'>Medium to Large Loads:</span> 7x12 ft dump trailer or 12–40 yard bins
+                </li>
+
+                <li className=''>
+                  <span className='font-bold'>DIY Option:</span> Ask about our Junk Removal Bin rentals
+                </li>
+              </ul>
+
+              <div className='mt-9 flex gap-5'>
+                
+                <button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
+                transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Free Quote!</button>
+
+                <button className='h-[50px] w-[155px] bg-[#102356] text-[18px] font-medium text-white transition-colors hover:bg-[#162454] hover:cursor-pointer'>Learn More</button>
+
+              </div>
+
+              
 
 
+          </div>
 
+          <div className='relative h-[440px] w-[570px] overflow-hidden'>
+            <Image src="" alt='' fill className='object-cover' />
           </div>
 
         </div>
