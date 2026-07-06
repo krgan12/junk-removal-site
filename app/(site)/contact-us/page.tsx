@@ -122,7 +122,8 @@ function page() {
           </div>
 
           <div className='relative h-[440px] w-[570px] overflow-hidden'>
-            <Image src="" alt='' fill className='object-cover' />
+            {/* <Image src="" alt='' fill className='object-cover' /> */}
+            
           </div>
 
         </div>
@@ -158,32 +159,11 @@ function page() {
 
         <script src="https://elfsightcdn.com/platform.js" async></script>
 
-        
+        {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+
+        </section> */}
 
         <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-        <ContactUsFooter />
-
-      
     </div>
   )
 }

@@ -2,7 +2,9 @@ import React from 'react'
 
 function ContactUsFooter() {
   return (
-    <div>ContactUsFooter</div>
+    <div>
+      
+    </div>
   )
 }
 
