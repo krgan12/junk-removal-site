@@ -4,37 +4,26 @@ import React, { useState } from 'react'
 
 function page() {
 
-  const HEADER_OFFSET = 20;
+  const HEADER_OFFSET = 17.4;
 
   const [email, setEmail] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
 
   return (
     <div className='min-h-screen'>
-      {/* <div>
-          <h1>JunkBGone Junk Removal - Get a free Quote</h1>
-          <p>Get a free junk removal quite! Tell us your city, nearest intersection, and what you need removed
-            (example: 1 couch, 10 bags). You can also text the details to: <span className='underline'>905-781-4046</span>
-          </p>
-          <form>
-            <label htmlFor=""></label>
-            I am human hCaptch verification - to do NEAR END 
-            Submit Button
-          </form>
-        </div>
-        <ContactUsFooter /> */}
 
         <section className='mx-auto max-w-[610px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
         </section>
 
-        <div className='mx-auto flex max-w-[610px] flex-col items-center'>
+        {/* <div className='mx-auto flex max-w-[610px] flex-col items-center'> */}
+        <div className='mx-auto flex flex-col items-center'>
           
-          <h1 className='text-center text-[58px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>JunkBGone Junk Removal - Get a free Quote</h1>
+          <h1 className='text-center text-[44px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>JunkBGone Junk Removal - Get a free Quote</h1>
           
-          <p className='mt-8 text-center text-[19px] leading-10 text-[#222]'>Get a free junk removal quite! Tell us your city, nearest intersection, and what you need removed
+          <p className='mt-8 text-center max-w-[850px] text-[19px] leading-8.5 text-[#222]'>Get a free junk removal quote! Tell us your city, nearest intersection, and what you need removed
           (example: 1 couch, 10 bags). You can also text the details to: <span className='underline cursor-pointer text-[#4d69b3]'>905-781-4046.</span>
           </p>
-          <form className='mt-10 flex w-full flex-col'>
+          <form className='mt-10 flex w-full flex-col max-w-[610px]'>
 
             <div className='mb-7'>
               
@@ -63,7 +52,7 @@ function page() {
 
               </textarea>
 
-              <div className='mt-4 h-[78px] w-[304px] border border-[$d9d9d9] bg-white'></div>
+              <div className='mt-4 h-[75px] w-[304px] border border-[#d9d9d9] bg-white'></div>
               
               <button type='submit' className='hover:cursor-pointer mt-6 h-[48px] w-[120px] bg-[#e32726] text-[18px] font-normal text-white transition-colors hover:bg-[#cf201f]'>Submit</button>
             </div>
