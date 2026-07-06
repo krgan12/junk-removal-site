@@ -9,6 +9,8 @@ function page() {
   const [email, setEmail] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
 
+  const SERVICES_OFFSET = 14;
+
   return (
     <div className='min-h-screen'>
 
@@ -59,6 +61,53 @@ function page() {
            
           </form>
         </div>
+
+        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+
+        </section>
+
+        <div className='mx-auto flex max-w-[1250px] justify-between gap-20'>
+          
+          <div className='max-w-[640px]'>
+              <p className="uppercase tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
+                Affordable Waste Removal Services
+              </p>
+
+              <h2 className='mt-5 text-[45px] leading-[1.15] font-normal tracking-[-1px]
+              text-[#222]'>
+                Flexible Services for your Specific Needs
+              </h2>
+
+              <p className='mt-5 text-[18px] leading-9 text-[#666]'>
+                {/* <strong className='text-[#555]'>
+                  Our Services:
+                </strong> */}
+                <p className='text-[#767676] font-bold'>
+                  Our Services:
+                </p>
+                {/* Leading-7 or ADJUST later on */}
+                <p className='leading-7.5 max-w-[550px]'>Household waste removal, furniture removal, construction cleanup, dump runs, yard waste removal, garbage removal, hot tub removal, piano removal, concrete disposal, clean fill (dirt) disposal, asphalt disposal, roofing disposal, debris removal, bulk landscape material delivery, and more.</p>
+              </p>
+
+
+
+          </div>
+
+        </div>
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
+        <ContactUsFooter />
         <ContactUsFooter />
         <ContactUsFooter />
         <ContactUsFooter />
@@ -68,6 +117,7 @@ function page() {
         <ContactUsFooter />
         <ContactUsFooter />
 
+      
     </div>
   )
 }
