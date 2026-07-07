@@ -2,7 +2,6 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import { contactUsQuery } from '@/sanity/queries/contactUs'
 import Image from 'next/image';
-import React from 'react'
 
 async function ContactUsFooter() {
 
@@ -16,22 +15,25 @@ async function ContactUsFooter() {
 
   return (
     <div className='w-full'>
-      <div className='relative'>
+      <div className='relative h-[429px] overflow-hidden'>
         <Image 
           src={imageUrl} 
           alt=''
           fill
-          className='object-cover' 
+          className='object-cover object-[center_100%] -z-10' 
         />
-       <h2 className='mt-5 ml-2 text-[40px] text-white leading-[1.15] font-medium tracking-[-1px]
-          text-[#222]'>
+       <div className='absolute inset-0 bg-black/45 z-0'></div>
+       <div className='relative left-68 top-22'>
+       <h2 className='mt-5 text-[40px] text-white leading-[1.15] font-medium tracking-[-1px]'>
           Ready to Clear Your Space?
         </h2>
-         
-        <p className='leading-8 text-[18px] text-white font-normal max-w-[550px]'>Contact Junk2Go today for fast, affordable junk removal in Hamilton and beyond! Call/text us at 289-456-8076 or email junk2gohamilton@gmail.com</p>
+         <br />
+        <p className='leading-8 text-[18px] text-white max-w-[550px]'>Contact Junk2Go today for fast, affordable junk removal in Oakville and beyond! Call/text us at 289-456-8076 or email junk2gohamilton@gmail.com</p>
+        <a href="/contact-us"><button className='border rounded-sm border-red-500 mt-10 h-[50px] w-[175px] bg-[#e32726] text-[18px] font-medium text-white transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Now</button></a>
+        </div>
       </div>
       <div className='bg-[#131416] items-center h-[212px] relative'>
-        <p className='text-[#727374] text-[18px] text-center relative top-40 '>© 2026 JunkBGone - Junk Removal Service</p>
+        <p className='text-[#727374] text-[18px] text-center relative top-40'>© 2026 JunkBGone - Junk Removal Service</p>
       </div>
     </div>
   )

@@ -23,6 +23,8 @@ function ContactUsClient({
 
   const GOOGLE_REVS_OFFSET = 12;
 
+  const FOOTER_OFFSET = 1;
+
   const scrollTo = () => {
     const element = document.getElementById("quote");
 
@@ -172,9 +174,9 @@ function ContactUsClient({
 
         <script src="https://elfsightcdn.com/platform.js" async></script>
 
-        {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${SERVICES_OFFSET}vh`}}>
+        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${FOOTER_OFFSET}vh`}}>
 
-        </section> */}
+        </section>
 
         {/* <ContactUsFooter /> */}
         {footer}
