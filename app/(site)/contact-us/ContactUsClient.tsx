@@ -23,10 +23,18 @@ function ContactUsClient({
 
   const GOOGLE_REVS_OFFSET = 12;
 
+  const scrollTo = () => {
+    const element = document.getElementById("quote");
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div className='min-h-screen'>
 
-        <section className='mx-auto max-w-[610px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
+        <section id='quote' className='mx-auto max-w-[610px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
         </section>
 
         {/* <div className='mx-auto flex max-w-[610px] flex-col items-center'> */}
@@ -116,10 +124,10 @@ function ContactUsClient({
 
               <div className='mt-9 flex gap-5'>
                 
-                <button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
+                <button onClick={scrollTo} className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
                 transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Free Quote!</button>
 
-                <button className='h-[50px] w-[155px] bg-[#102356] text-[18px] font-medium text-white transition-colors hover:bg-[#162454] hover:cursor-pointer'>Learn More</button>
+                <a href="/"><button className='h-[50px] w-[155px] bg-[#102356] text-[18px] font-medium text-white transition-colors hover:bg-[#162454] hover:cursor-pointer'>Learn More</button></a>
 
               </div>
 
