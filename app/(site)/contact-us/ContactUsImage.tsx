@@ -9,7 +9,6 @@ async function ContactUsImage() {
   const contactUsData = await client.fetch(contactUsQuery);
 
   // SEARCH BY CUSTOM NAME
-
   const selectedImage = contactUsData.find(
     (item: any) => item.name === "Image1"
   );
