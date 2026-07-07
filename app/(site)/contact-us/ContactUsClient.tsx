@@ -1,13 +1,15 @@
 'use client'
-import ContactUsFooter from '@/components/ContactUsFooter'
+// import ContactUsFooter from '@/components/ContactUsFooter'
 import React, { useState } from 'react'
 import Image from 'next/image';
 // import ContactUsImage from '@/components/ContactUsImage';
 
 function ContactUsClient({
-  children
+  image,
+  footer
 }: {
-  children: React.ReactNode
+  image: React.ReactNode,
+  footer: React.ReactNode
 }) {
 
   const HEADER_OFFSET = 17.4;
@@ -89,9 +91,6 @@ function ContactUsClient({
               </h2>
 
               <p className='mt-5 text-[18px] leading-9 text-[#666]'>
-                {/* <strong className='text-[#555]'>
-                  Our Services:
-                </strong> */}
                 <p className='text-[#767676] font-bold'>
                   Our Services:
                 </p>
@@ -129,7 +128,7 @@ function ContactUsClient({
           <div className='relative mt-19 h-[440px] w-[800px] overflow-hidden'>
             {/* <Image src="" alt='' fill className='object-cover' /> */}
             {/* <ContactUsImage /> */}
-            {children}
+            {image}
           </div>
 
         </div>
@@ -169,7 +168,8 @@ function ContactUsClient({
 
         </section> */}
 
-        <ContactUsFooter />
+        {/* <ContactUsFooter /> */}
+        {footer}
     </div>
   )
 }

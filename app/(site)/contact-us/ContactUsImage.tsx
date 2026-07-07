@@ -14,9 +14,6 @@ async function ContactUsImage() {
     (item: any) => item.name === "Image1"
   );
 
-  console.log("Sanity Images: ", contactUsData);
-  console.log("Selected Image: ", selectedImage)
-
   const imageUrl = selectedImage?.image?urlFor(selectedImage.image).width(1000).url() : "";
 
   return (
