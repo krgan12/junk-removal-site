@@ -23,37 +23,14 @@ async function ServiceCard({serviceName}: serviceName) {
 
    const lines = description.split("\n");
 
-   const paragraph = [];
+//    console.log("Services Data: ", servicesData);
 
-   const bullets = [];
+//    console.log("Selected Service: ", selectedService);
+//    console.log("Image URL: ", imageUrl);
+//    console.log("Description: ", description);
+//    console.log("Lines: ", lines);
 
-   let bulletMode = false;
-
-   console.log("Services Data: ", servicesData);
-
-   console.log("Selected Service: ", selectedService);
-   console.log("Image URL: ", imageUrl);
-   console.log("Description: ", description);
-   console.log("Lines: ", lines)
-
-   for (const line of lines) {
-
-    if (
-        line.includes("Furniture") ||
-        line.includes("Drywall") ||
-        line.includes("Full house") ||
-        line.includes("Full disconnection") 
-    ) {
-        bulletMode = true;
-    }
-
-    if (bulletMode) {
-        bullets.push(line);
-    }
-    else {
-        paragraph.push(line);
-    }
-   }
+   const formattedServiceName = selectedService?.name?.replace(/_/g, " ").replace(/\b\w/g, (char: string) => char.toUpperCase());
 
   return (
     <>  
@@ -62,23 +39,20 @@ async function ServiceCard({serviceName}: serviceName) {
             src={imageUrl}
             alt={servicesData?.name || "Placeholder"}
             // fill
-            width={1000}
-            height={1000}
+            width={250}
+            height={400}
             className='object-cover'
         />
 
+        <h1>
+            {formattedServiceName}
+        </h1>
+
         <p className='mt-5 text-[17px] leading-8 text-[#666]'>
-            {/* {paragraph.join(" ")} */}
             {selectedService.description}
         </p>
 
         <ul className='mt-8 space-y-4 pl-6 list-disc text-[17px] leading-8 text-[#666]'>
-            
-            {/* {bullets.map((item) => (
-                <li key={item}>
-                    {item}
-                </li>
-            ))} */}
 
             {selectedService.features.map((feature: any) => (
                 <li key={feature}>
