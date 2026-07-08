@@ -19,7 +19,7 @@ async function ContactUsImage() {
     <>
      <Image 
       src={imageUrl} 
-      alt={contactUsData?.name || "Contact Image"} 
+      alt={contactUsData?.name} 
       fill 
       className='object-cover' />
     </>

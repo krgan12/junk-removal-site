@@ -1,3 +1,4 @@
+import ServiceCard from '@/components/ServiceCard';
 import ServicesFooter from '@/components/ServicesFooter'
 import React from 'react'
 
@@ -31,6 +32,11 @@ function page() {
               <h1 className='mt-4 text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
 
               <p className='mt-5 text-[20px] text-[black]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
+
+              <ServiceCard serviceName='House_Junk_Removal'/>
+              <></>
+              <></>
+              <></>
         </div>
 
         <ServicesFooter />
