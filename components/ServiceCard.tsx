@@ -68,14 +68,21 @@ async function ServiceCard({serviceName}: serviceName) {
         />
 
         <p className='mt-5 text-[17px] leading-8 text-[#666]'>
-            {paragraph.join(" ")}
+            {/* {paragraph.join(" ")} */}
+            {selectedService.description}
         </p>
 
         <ul className='mt-8 space-y-4 pl-6 list-disc text-[17px] leading-8 text-[#666]'>
             
-            {bullets.map((item) => (
+            {/* {bullets.map((item) => (
                 <li key={item}>
                     {item}
+                </li>
+            ))} */}
+
+            {selectedService.features.map((feature: any) => (
+                <li key={feature}>
+                    {feature}
                 </li>
             ))}
 

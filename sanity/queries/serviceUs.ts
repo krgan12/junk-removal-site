@@ -4,6 +4,7 @@ export const serviceUsQuery = groq`
 *[_type == "services"] {
   name,
   description,
+  features,
   image
 }
 `

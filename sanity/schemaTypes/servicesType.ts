@@ -20,6 +20,16 @@ export const servicesType = defineType({
             validation: Rule => Rule.required(),
         }),
         defineField({
+            name: 'features',
+            title: 'Features',
+            type: "array",
+            of: [
+                defineArrayMember({
+                    type: 'string'
+                })
+            ]
+        }),
+        defineField({
             name: 'image',
             title: 'Image',
             type: 'image',
