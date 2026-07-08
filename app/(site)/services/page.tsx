@@ -28,7 +28,7 @@ function page() {
 
             <div className='mt-20 space-y-32'>
 
-              <div>
+              <div className='relative ml-[-126px]'>
                 <ServiceCard serviceName='Household_Junk_Removal'/>
               </div>
               <div>
