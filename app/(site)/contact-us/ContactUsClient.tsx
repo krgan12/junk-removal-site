@@ -1,8 +1,6 @@
 'use client'
-// import ContactUsFooter from '@/components/ContactUsFooter'
 import React, { useState } from 'react'
 import Image from 'next/image';
-// import ContactUsImage from '@/components/ContactUsImage';
 
 function ContactUsClient({
   image,

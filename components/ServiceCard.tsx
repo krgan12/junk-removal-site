@@ -33,35 +33,47 @@ async function ServiceCard({serviceName}: serviceName) {
    const formattedServiceName = selectedService?.name?.replace(/_/g, " ").replace(/\b\w/g, (char: string) => char.toUpperCase());
 
   return (
-    <>  
+    <div className='w-full'>  
 
-        <Image 
-            src={imageUrl}
-            alt={servicesData?.name || "Placeholder"}
-            // fill
-            width={250}
-            height={400}
-            className='object-cover'
-        />
+        <div className='relative overflow-hidden'>
+            <Image 
+                src={imageUrl}
+                alt={servicesData?.name || "Placeholder"}
+                // fill
+                width={300}
+                height={100}
+                // className='object-cover'
+                className='w-[285px] h-[350px]'
+            />
+        </div>
+        
 
-        <h1>
+        <h1 className='mt-10 text-[26px] leading-[1.1] tracking-[-0.01px] font-normal text-black'>
             {formattedServiceName}
         </h1>
 
-        <p className='mt-5 text-[17px] leading-8 text-[#666]'>
+        <p className='mt-5 text-[18px] leading-8 text-[#666]'>
             {selectedService.description}
         </p>
 
-        <ul className='mt-8 space-y-4 pl-6 list-disc text-[17px] leading-8 text-[#666]'>
+        <ul className='mt-8 space-y-4 text-[17.5px] leading-8 text-[#666]'>
 
             {selectedService.features.map((feature: any) => (
-                <li key={feature}>
-                    {feature}
+                // <li className='text-[#6f6f6f]' key={feature}>
+                //     {feature}
+                // </li>
+
+                <li className='flex items-start gap-3' key={feature}>
+                    <span className='mt-[13.5px] h-1 w-1 rounded-full bg-[#666] shrink-0'></span>
+
+                    <span>
+                        {feature}
+                    </span>
                 </li>
             ))}
 
         </ul>
-    </>
+    </div>
   )
 }
 
