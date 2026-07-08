@@ -33,10 +33,10 @@ function page() {
 
               <p className='mt-5 text-[20px] text-[black]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
 
-              <ServiceCard serviceName='House_Junk_Removal'/>
-              <></>
-              <></>
-              <></>
+              <ServiceCard serviceName='Household_Junk_Removal'/>
+              <ServiceCard serviceName='Construction_Waste_Removal'/>
+              <ServiceCard serviceName='Estate_Cleanouts'/>
+              <ServiceCard serviceName='Hot_Tub_&_Spa_Removal'/>
         </div>
 
         <ServicesFooter />
