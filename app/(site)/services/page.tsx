@@ -9,7 +9,7 @@ function page() {
   const GOOGLE_REVS_OFFSET = 17.4;
 
   return (
-    <div className='min-h-screen'>
+    <div className='min-h-screen ml-33.5'>
 
         <section id='quote' className='mx-auto max-w-[760px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
           
