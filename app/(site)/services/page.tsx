@@ -1,3 +1,4 @@
+import FrequentlyAskedQuestions from '@/components/FrequentlyAskedQuestions';
 import ServiceCard from '@/components/ServiceCard';
 import ServicesFooter from '@/components/ServicesFooter'
 import React from 'react'
@@ -62,17 +63,25 @@ function page() {
           
         </section> 
 
-        {/* <h1 className='mt-4 text-center relative ml-[5%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Frequently Asked Questions</h1> */}
-
-        {/* <p className='mt-5 text-center text-[20px] max-w-[100px]
-         text-[black] ml-[6%]'>Have questions about our junk removal services? Here are answers to the most common ones.</p>
-         */}
-
          <div className='mx-auto mt-6 max-w-[900px] ml-[22%]'>
+
           <h1 className='text-center relative ml-[15%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Frequently Asked Questions</h1>
+
           <p className='mt-8 text-center text-[19px] ml-[19%] leading-[1.8] text-[#333] max-w-[700px]'>
             Have questions about our junk removal services? Here are the answers to the most common ones.
           </p>
+
+          <FrequentlyAskedQuestions />
+
+           <div className='mt-15 flex justify-center gap-6 ml-50'>
+                
+                <a href="/contact-us"><button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
+                transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Today!</button></a>
+              
+                <a href="/contact-us"><button className='h-[50px] w-[200px] bg-[#102356] text-[18px] font-medium text-white transition-colors hover:bg-[#162454] hover:cursor-pointer'>Request a Quote!</button></a>
+
+            </div>
+
          </div>
 
         {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>

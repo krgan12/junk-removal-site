@@ -28,7 +28,7 @@ async function ContactUsFooter() {
           Ready to Clear Your Space?
         </h2>
          <br />
-        <p className='leading-8 text-[18px] text-white max-w-[550px]'>Contact Junk2Go today for fast, affordable junk removal in Oakville and beyond! Call/text us at 289-456-8076 or email junk2gohamilton@gmail.com</p>
+        <p className='leading-8 text-[18px] text-white max-w-[550px]'>Contact Junk2Go today for fast, affordable junk removal in Oakville and beyond! Call/text us at <a href="tel:+1-905-481-4046" className='underline'>905-481-4046</a> or email <a href='' className='underline'>junkBgoneoakville@gmail.com</a></p>
         <a href="/contact-us"><button className='border rounded-sm border-red-500 mt-10 h-[50px] w-[175px] bg-[#e32726] text-[18px] font-medium text-white transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Now</button></a>
         </div>
       </div>
