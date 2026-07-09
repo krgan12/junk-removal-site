@@ -17,7 +17,7 @@ function page() {
 
         {/* <div className='mx-auto text-center max-w-[800px] relative mr-115'> */}
         <div className='mx-auto max-w-[1220px] text-center'>
-             <div className='max-w-[900px] relative ml-[180%]'>
+             <div className='max-w-[900px] relative ml-[18%]'>
               <p className="uppercase items-center justify-center tracking-[4.5px] text-[15px] font-medium text-[#6f6f6f]">
                 Whatever you need gone, we'll take care of it. Professional, insured, and always on time.
               </p>
