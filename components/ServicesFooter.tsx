@@ -20,7 +20,7 @@ function ServicesFooter() {
 
           <a href="/contact-us" className='text-[18px] text-[#536aa1] transition-colors duration-300 hover:text-[#db2424]'>Contact</a>
 
-        </div>
+        </div> 
 
       </div>
 
