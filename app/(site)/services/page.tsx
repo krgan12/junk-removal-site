@@ -7,6 +7,8 @@ function page() {
 
   const HEADER_OFFSET = 17.4;
 
+  const FAQS_OFFSET = 12;
+
   const GOOGLE_REVS_OFFSET = 17.4;
 
   return (
@@ -59,7 +61,7 @@ function page() {
               
         </div>
 
-         <section id='quote' className='mx-auto max-w-[760px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
+         <section id='quote' className='mx-auto max-w-[760px]' style={{paddingTop: `${FAQS_OFFSET}vh`}}>
           
         </section> 
 
@@ -71,9 +73,11 @@ function page() {
             Have questions about our junk removal services? Here are the answers to the most common ones.
           </p>
 
-          <FrequentlyAskedQuestions />
+          <div className='relative left-17 bottom-5'>
+            <FrequentlyAskedQuestions />
+          </div>
 
-           <div className='mt-15 flex justify-center gap-6 ml-50'>
+           <div className='mt-15 flex justify-center gap-6 ml-35'>
                 
                 <a href="/contact-us"><button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
                 transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Today!</button></a>
@@ -84,11 +88,11 @@ function page() {
 
          </div>
 
-        {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
+        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
             <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
         </section>
 
-        <script src="https://elfsightcdn.com/platform.js" async></script> */}
+        <script src="https://elfsightcdn.com/platform.js" async></script>
         <ServicesFooter />
     </div>
   )

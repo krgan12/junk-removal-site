@@ -27,32 +27,50 @@ function FrequentlyAskedQuestions() {
 
   return (
     <div className='mx-auto mt-16 max-w-[760px]'>
-        <div className='border-t border-[#e5e5e5] py-7'>
-            <div className='flex items-center justify-between'>
-                {faqs.map((item, index) => (
-                <button onClick={()=> setOpenIndex(index)} className=''>
-                    {/* {openIndex === index ? <ChevronUp size={20}/> :
-                    
-                        <ChevronDown size={20} />
-                    
-                    } */}
-                    {item.question}
-                    <ChevronDown className={`transition-transform duration-300
-                    ${openIndex === index ? "rotate-180": "rotate-0"} 
+       
+            {/* <div className='flex items-center justify-between'> */}
+            {/* <div className='mt-16'> */}
 
-                    `}
+            <div className='mt-16'>
+                
+                {faqs.map((item, index) => (
+
+                <div key={index} className='border-t border-[#e6e6e6]'>
+                
+                <button onClick={()=> setOpenIndex(openIndex === index ? -1 : index)} className='w-full
+                flex items-center justify-between py-8 text-left hover:cursor-pointer'>
+             
+                    <p className='text-[20px] font-normal text-[#222]'>{item.question}</p>
+                        <ChevronDown className={`transition-transform duration-300 text-[#b1b1b2]
+                        ${openIndex === index ? "rotate-180": "rotate-0"} 
+
+                        `}
                         
                     />
+              
+                </button>
+
                     {openIndex === index && (
-                        <p className='mt-6 max-w-[640px] text-[17px] leading-9 text-[#666]'>
+                        <div className={`overflow-hidden transition-all duration-300
+                        ${
+                            openIndex === index ? "pb-8" : "pb-0"
+                        }
+                        `}>
+                        
+                         <p className='mt-[-5px] max-w-[650px] text-[17px] leading-6.5 text-[#666]'>
                             {item.answer}
                         </p>
+                        </div>
                     )}
-                    {/* {item.answer} */}
-                </button>
+                <div className='border-b border-[#e6e6e6]'></div>
+                </div>
                 ))}
+
+                <div className='border-b border-[#e6e6e6]'></div>
+                
             </div>
-        </div>
+        
+
     </div>
   )
 }
