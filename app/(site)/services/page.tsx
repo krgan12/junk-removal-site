@@ -25,7 +25,7 @@ function page() {
 
               <h1 className='mt-4 relative ml-[9%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
 
-              <p className='mt-5 text-[20px] text-[black] ml-[8.5%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
+              <p className='mt-5 text-[20px] text-[black] ml-[6%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
 
             {/* <div className='mt-20 space-y-[32px]'> */}
             {/* <div className='mt-20 grid grid-cols-4 gap-x-6 -ml-34'> */}
@@ -47,7 +47,7 @@ function page() {
 
             </div>
 
-            <div className='mt-9 flex gap-6 ml-115'>
+            <div className='mt-9 flex gap-6 ml-121'>
                 
                 <a href="/contact-us"><button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
                 transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Today!</button></a>
@@ -62,19 +62,18 @@ function page() {
           
         </section> 
 
-        <div>
+        {/* <h1 className='mt-4 text-center relative ml-[5%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Frequently Asked Questions</h1> */}
 
-          {/* <div className='mt-9 flex gap-6 ml-115'>
-                
-                <a href="/contact-us"><button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
-                transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Today!</button></a>
-              
-                <a href="/contact-us"><button className='h-[50px] w-[200px] bg-[#102356] text-[18px] font-medium text-white transition-colors hover:bg-[#162454] hover:cursor-pointer'>Request a Quote!</button></a>
+        {/* <p className='mt-5 text-center text-[20px] max-w-[100px]
+         text-[black] ml-[6%]'>Have questions about our junk removal services? Here are answers to the most common ones.</p>
+         */}
 
-          </div> */}
-
-        </div>
-        
+         <div className='mx-auto mt-6 max-w-[900px] ml-[22%]'>
+          <h1 className='text-center relative ml-[15%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Frequently Asked Questions</h1>
+          <p className='mt-8 text-center text-[19px] ml-[19%] leading-[1.8] text-[#333] max-w-[700px]'>
+            Have questions about our junk removal services? Here are the answers to the most common ones.
+          </p>
+         </div>
 
         {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
             <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
