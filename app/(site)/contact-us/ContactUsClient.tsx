@@ -166,7 +166,13 @@ function ContactUsClient({
         </section>
 
 
-        <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
+        {/* <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
+            <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
+        </section>
+
+        <script src="https://elfsightcdn.com/platform.js" async></script> */}
+
+         <section className='mx-auto max-w-[1250px]' style={{ paddingTop: `${GOOGLE_REVS_OFFSET}vh`}}>
             <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
         </section>
 
