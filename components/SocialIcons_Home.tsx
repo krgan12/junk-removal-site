@@ -5,21 +5,31 @@ import { FaFacebook, FaGoogle, FaTiktok } from 'react-icons/fa'
 import { SiNextdoor } from 'react-icons/si'
 
 function SocialIcons_Home() {
+
+    const iconStyle = `
+    text-[#102356]
+    text-[26px]
+    transition-all 
+    duration-300
+    hover:text-[#db2424]
+    hover:-translate-y-1
+    `
+
   return (
-    <div>
-        <a className='bg-white' href="">
+    <div className='flex items-center gap-7'>
+        <a className='text-[blue]' href="">
             <Facebook />
         </a>
-        <a className='bg-white' href="">
+        <a className='text-[purple]' href="">
             <InstagramIcon  />
         </a>
-        <a className='bg-white' href="">
-            <FaTiktok />
+        <a className='' href="">
+            <FaTiktok className='' />
         </a>
         <a className='bg-white' href="">
             <BsHouse />
         </a>
-        <a className='bg-white' href="">
+        <a className='text-[#de0000]' href="">
             <BsYelp />
         </a>
         <a className='bg-white' href="">
