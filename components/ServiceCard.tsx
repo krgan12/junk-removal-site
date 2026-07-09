@@ -61,7 +61,7 @@ async function ServiceCard({serviceName}: serviceName) {
         </p> */}
 
         {/* <div className='mt-5 mx-auto max-w-[560px] text-left'> */}
-        <div className='mt-5 text-left'>
+        <div className='mt-5 text-left max-w-[275px]'>
             <p className='text-[17.5px] leading-7.5 text-[#666]'>
                 {selectedService.description}
             </p>
@@ -69,7 +69,7 @@ async function ServiceCard({serviceName}: serviceName) {
 
         {/* <ul className='mt-8 space-y-4 text-[17.5px] leading-8 text-[#666]'> */}
         {/* <ul className='mt-8 space-y-4 ml-[250px] text-[17.5px] leading-7 text-[#666]'> */}
-        <ul className='mt-7.5 space-y-4 ml-[12%] text-[17.5px] leading-7 text-[#666]'>
+        <ul className='mt-7.5 space-y-4 ml-[7%] text-[17.5px] leading-7 text-[#666]'>
 
             {selectedService.features.map((feature: any) => (
                 // <li className='text-[#6f6f6f]' key={feature}>

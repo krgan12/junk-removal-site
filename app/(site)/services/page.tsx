@@ -23,14 +23,14 @@ function page() {
               </p>
             </div>
 
-              <h1 className='mt-4 relative ml-[15%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
+              <h1 className='mt-4 relative ml-[9%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
 
-              <p className='mt-5 text-[20px] text-[black] ml-[11%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
+              <p className='mt-5 text-[20px] text-[black] ml-[8.5%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
 
             {/* <div className='mt-20 space-y-[32px]'> */}
             {/* <div className='mt-20 grid grid-cols-4 gap-x-6 -ml-34'> */}
             {/* <div className='mt-20 grid grid-cols-4 gap-x-6 relative left-[-100px]'> */}
-            <div className='mt-20 grid grid-cols-4 gap-x-6 relative left-[40px]'>
+            <div className='mt-13 grid grid-cols-4 gap-x-6 relative left-[40px]'>
 
               <div>
                 <ServiceCard serviceName='Household_Junk_Removal'/>
@@ -47,7 +47,7 @@ function page() {
 
             </div>
 
-            <div className='mt-9 flex gap-6 ml-120'>
+            <div className='mt-9 flex gap-6 ml-115'>
                 
                 <a href="/contact-us"><button className='h-[50px] w-[155px] bg-[#db2424] text-[18px] font-medium text-white 
                 transition-colors hover:bg-[#cf201f] hover:cursor-pointer'>Book Today!</button></a>
