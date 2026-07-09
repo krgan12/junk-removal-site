@@ -9,26 +9,30 @@ function page() {
   const GOOGLE_REVS_OFFSET = 17.4;
 
   return (
-    <div className='min-h-screen ml-33.5'>
+    <div className='min-h-screen'>
 
         <section id='quote' className='mx-auto max-w-[760px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
           
         </section> 
 
         {/* <div className='mx-auto text-center max-w-[800px] relative mr-115'> */}
-        <div className='mx-auto max-w-[900px] text-center'>
-             
+        <div className='mx-auto max-w-[1220px] text-center'>
+             <div className='max-w-[900px] relative ml-[15%]'>
               <p className="uppercase items-center justify-center tracking-[4.5px] text-[15px] font-medium text-[#6f6f6f]">
                 Whatever you need gone, we'll take care of it. Professional, insured, and always on time.
               </p>
+            </div>
 
-              <h1 className='mt-4 text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
+              <h1 className='mt-4 relative ml-[8%] text-[44px] leading-[1.15] tracking-[-1.55px] font-normal'>Our Junk Removal Services</h1>
 
-              <p className='mt-5 text-[20px] text-[black]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
+              <p className='mt-5 text-[20px] text-[black] ml-[8%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
 
-            <div className='mt-20 space-y-32'>
+            {/* <div className='mt-20 space-y-[32px]'> */}
+            {/* <div className='mt-20 grid grid-cols-4 gap-x-6 -ml-34'> */}
+            {/* <div className='mt-20 grid grid-cols-4 gap-x-6 relative left-[-100px]'> */}
+            <div className='mt-20 grid grid-cols-4 gap-x-6 relative left-[36px]'>
 
-              <div className='relative ml-[-126px]'>
+              <div>
                 <ServiceCard serviceName='Household_Junk_Removal'/>
               </div>
               <div>
