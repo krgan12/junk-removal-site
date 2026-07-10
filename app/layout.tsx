@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Junk Removal",
-  description: "Fast, reliable residential and commercial cleanouts with eco-friendly disposal. Free quotes available—call today! text the details to [INSERT NUMBER]",
+  description: "Fast, reliable residential and commercial cleanouts with eco-friendly disposal. Free quotes available—call today! text the details to 905-481-4046",
 };
 
 export default function RootLayout({
