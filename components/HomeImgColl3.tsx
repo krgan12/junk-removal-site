@@ -1,8 +1,33 @@
+import { client } from '@/sanity/lib/client';
+import { urlFor } from '@/sanity/lib/image';
+import { homeQuery } from '@/sanity/queries/home'
+import { homeGalQuery } from '@/sanity/queries/homeGallery';
+import Image from 'next/image';
 import React from 'react'
 
-function HomeImgColl3() {
+async function HomeImgColl3() {
+
+    const homeData = await client.fetch(homeGalQuery);
+
+    const gallery = homeData.find(
+        (item: any) => item.name === "Images5"
+    )
+
+    const images = [...gallery.gallery]
+
   return (
-    <div>HomeImgColl3</div>
+    <div className='flex w-full'>
+        {images.map((image: any) => (
+            <div key={image._key} className='relative flex-1 h-[370px]'>
+                <Image 
+                    src={urlFor(image).url()}
+                    alt={image.name}
+                    fill
+                    className='object-cover'
+                />
+            </div>
+        ))}
+    </div>
   )
 }
 
