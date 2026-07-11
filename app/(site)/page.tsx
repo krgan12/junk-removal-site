@@ -5,9 +5,6 @@ import HomeImgColl3 from "@/components/HomeImgColl3";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { homeQuery } from "@/sanity/queries/home";
-// import { client } from "@/sanity/lib/client";
-// import { urlFor } from "@/sanity/lib/image";
-// import { homeQuery } from "@/sanity/queries/home";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,25 +25,25 @@ export default async function Page() {
     <div className="min-h-screen">
       <script src="https://elfsightcdn.com/platform.js" async></script>
 
-      <section className="mx-auto max-w-[610px]" style={{paddingTop: `${TOP_HEADER}vh`}}>
+      {/* <section className="mx-auto max-w-[610px]" style={{paddingTop: `${TOP_HEADER}vh`}}>
 
-      </section>
+      </section> */}
 
       <section className="relative flex min-h-screen">
 
         {/* Left */}
         {/* <div className="relative w-1/2 h-screen"> */}
-        <div className="flex w-1/2 flex-col justify-center px-35">
+        <div className="flex w-1/2 flex-col justify-center pl-60 mt-25">
 
-          <p className="uppercase mt-[-15] ml-1 tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
+          <p className="uppercase mt-[-15] ml-1.5 tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
             We Get Rid of Unwanted Items
           </p>
 
-          <h1 className="mt-7 relative bottom-2 mr-10 text-[50px] leading-[1.05] tracking-[-2px] font-normal text-[#222]">Junk Removal Oakville</h1>
+          <h1 className="mt-7 relative bottom-2 ml-[-1%] text-[50px] leading-[1.05] tracking-[-2px] font-normal text-[#222]">Junk Removal Oakville</h1>
 
-          <div className="mt-4 space-y-6 max-w-[560px]">
+          <div className="mt-4 space-y-6 max-w-[550px]">
 
-            <p className="text-[17px] leading-8 text-[#666]">
+            <p className="text-[17px] leading-7 text-[#666]">
 
               <span className="font-semibold text-[#555]">Need reliable junk removal in Hamilton?</span>
 
@@ -55,19 +52,19 @@ export default async function Page() {
 
             </p>
 
-            <p className="text-[17px] leading-8 text-[#666]">
+            <p className="text-[17px] leading-7 text-[#666]">
               Our team is trained, insures, and ready to remove junk from homes 
               and businesses. We offer fast, stress-free service to make the 
               process easy.
             </p>
 
-            <p className="text-[17px] leading-8 text-[#666]">
+            <p className="text-[17px] leading-7 text-[#666]">
               We care about the environment.
               We donate, recycle, and repurpose items whenever possible to
               keep waste out of landfills.
             </p>
 
-            <p className="text-[17px] leading-8 text-[#666]">
+            <p className="text-[17px] leading-7 text-[#666]">
               We proudly serve the Greater Oakville area,
               including Oakville,
               Brantford,
@@ -78,18 +75,18 @@ export default async function Page() {
 
           </div>
 
-           <div className="mt-12 flex gap-6">
+           <div className="mt-10 flex gap-6">
 
             <Link href="/contact-us">
               
-              <button className="h-[52px] w-[190px] bg-[#db2424] text-white text-[18px] transition-colors
+              <button className="h-[50px] w-[190px] bg-[#db2424] text-white text-[17.5px] transition-colors
               hover:bg-[#cf201f] hover:cursor-pointer">Request a Quote</button>
 
             </Link>
 
             <Link href="/services">
               
-              <button className="h-[52px] w-[180px] bg-[#102356] text-white text-[18px] transition-colors
+              <button className="h-[50px] w-[180px] bg-[#102356] text-white text-[17.5px] transition-colors
               hover:bg-[#162454] hover:cursor-pointer">Learn More</button>
 
             </Link>
@@ -107,7 +104,6 @@ export default async function Page() {
             fill
             className="object-cover"
           />
-          
         </div>
 
       </section>
