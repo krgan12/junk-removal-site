@@ -15,11 +15,13 @@ import { FaWind } from "react-icons/fa";
 export default async function Page({
     col1,
     col2, 
-    col3
+    col3,
+    form
 }: {
     col1: React.ReactNode,
     col2: React.ReactNode,
     col3: React.ReactNode,
+    form: React.ReactNode,
 }) {
 
   const homeData = await client.fetch(homeQuery);
@@ -245,6 +247,7 @@ export default async function Page({
             </div>
            
           </form> */}
+          {form}
       </div>
 
       <div>
