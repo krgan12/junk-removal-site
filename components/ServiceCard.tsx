@@ -45,7 +45,7 @@ async function ServiceCard({serviceName}: serviceName) {
         
 
         <h1 className='max-w-[500px] text-center mt-10 text-[26px] leading-[1.1] tracking-[-0.01px] font-normal text-black'>
-            
+
             {formattedServiceName}
         </h1>
         <div className='mt-5 text-left max-w-[275px]'>
@@ -57,9 +57,6 @@ async function ServiceCard({serviceName}: serviceName) {
         <ul className='mt-7.5 space-y-4 ml-[7%] text-[17.5px] leading-7 text-[#666]'>
 
             {selectedService.features.map((feature: any) => (
-                // <li className='text-[#6f6f6f]' key={feature}>
-                //     {feature}
-                // </li>
 
                 <li className='flex items-start gap-3 relative bottom-3' key={feature}>
                     <span className='mt-[11px] h-[4px] w-[4px] rounded-full bg-[#6b6b6b] shrink-0'></span>

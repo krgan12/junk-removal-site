@@ -140,7 +140,7 @@ export default async function Page() {
                 disposal, bulk landscape material delivery, and more.</p>
               
               <p className='text-[17.5px] mt-6 font-semibold text-[#767676]'>Flexible options to fit your needs:</p>
-              <ul className='mt-6 space-y-3 pl-6 text-[17.5px] text-[#767676] list-disc'>
+              <ul className='mt-6 space-y-3 pl-8 text-[17.5px] text-[#767676] list-disc'>
                 
                 <li className=''>
                   <span className='font-bold'>Small to Medium Loads:</span> 6.5 ft pickup truck bed
