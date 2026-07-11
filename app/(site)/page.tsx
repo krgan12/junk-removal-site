@@ -18,6 +18,12 @@ export default async function Page() {
 
   const imageUrl = selectedImage?.image?urlFor(selectedImage.image).width(1000).url() : "";
 
+   const selectedImage2 = homeData.find(
+    (item: { name: string; }) => item.name === "Image2"
+  );
+
+  const imageUrl2 = selectedImage?.image?urlFor(selectedImage2.image).width(500).url() : "";
+
   const TOP_HEADER = 8;
 
   return (
@@ -110,8 +116,13 @@ export default async function Page() {
 
       
 
-      <div>
-        
+      <div className="relative w-1/2 h-screen overflow-hidden">
+        <Image 
+          src={imageUrl2}
+          alt=""
+          fill 
+          className="object-cover"
+        />
       </div>
 
       <div>
