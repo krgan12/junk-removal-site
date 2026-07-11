@@ -163,14 +163,22 @@ export default async function Page() {
 
           <div>
             {/* Icons */}
-            {/* <DeliveryTruckBoltOutlineIcon height="1em" style={{ color: '#50659b' }} /> */}
+            {/* <DeliveryTruckBoltOutlineIcon height="1em" style={{ color: '#50659b' }} />
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.9 46h5M24 46h22.1M46 12H34l-6 10H6L2 36.9 8.7 46H14"></path><path data-name="layer2" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.3 40H62V30h-5.8l-5-10H40v20m16.2-10H40"></path><circle data-name="layer1" cx="19" cy="47" r="5" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle data-name="layer1" cx="51" cy="47" r="5" fill="none" stroke="#202020" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
-            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32.401 58H2V2h44v38.02M12 2v8m-2 0h4m10-8v8m-2 0h4m10-8v8m-2 0h4" stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path><path d="M42 51.885L32.113 59l3.809-11.471L26 41l12.242-1L42 29l3.758 11L58 41l-9.918 6.529L51.891 59 42 51.885z" stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer1" stroke-linejoin="round" stroke-linecap="round"></path></svg>
+            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32.401 58H2V2h44v38.02M12 2v8m-2 0h4m10-8v8m-2 0h4m10-8v8m-2 0h4" stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path><path d="M42 51.885L32.113 59l3.809-11.471L26 41l12.242-1L42 29l3.758 11L58 41l-9.918 6.529L51.891 59 42 51.885z" stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" data-name="layer1" stroke-linejoin="round" stroke-linecap="round"></path></svg> */}
           </div>
 
           {/* <div className='relative mt-19 h-[440px] w-[800px] overflow-hidden'>
             <Image src={imageUrl2} alt="" fill className="object-cover"/>
           </div> */}
+
+          {/* <div className="mx-auto flex max-w-[1250px] justify-around gap-20"> */}
+            
+            <div className="relative mt-[-28.5%] ml-218 h-[700px] w-[580px] overflow-hidden">
+              <Image src={imageUrl2} alt="" fill className="object-cover"/>
+            </div>
+
+          {/* </div> */}
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div>
 
