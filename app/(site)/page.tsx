@@ -31,17 +31,12 @@ export default async function Page() {
 
   return (
     
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <script src="https://elfsightcdn.com/platform.js" async></script>
-
-      {/* <section className="mx-auto max-w-[610px]" style={{paddingTop: `${TOP_HEADER}vh`}}>
-
-      </section> */}
 
       <section className="relative flex min-h-screen">
 
         {/* Left */}
-        {/* <div className="relative w-1/2 h-screen"> */}
         <div className="flex w-1/2 flex-col justify-center pl-60 mt-25">
 
           <p className="uppercase mt-[-15] ml-1.5 tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
@@ -54,7 +49,7 @@ export default async function Page() {
 
             <p className="text-[17px] leading-7 text-[#666]">
 
-              <span className="font-semibold text-[#555]">Need reliable junk removal in Hamilton?</span>
+              <span className="font-semibold text-[#555]">Need reliable junk removal in Oakville?</span>
 
               {" "}Whether you have a small 
               load or a full estate cleanout, we handle jobs of all sizes.
@@ -189,7 +184,7 @@ export default async function Page() {
             
             </div>
 
-            <div className="flex items-center gap-4 mt-[-35]">
+            <div className="flex items-center gap-4 mt-[-45]">
               <svg className="w-15 h-15 text-[#50659b]" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="M32.401 58H2V2h44v38.02M12 2v8m-2 0h4m10-8v8m-2 0h4m10-8v8m-2 0h4" stroke-width="2" stroke-miterlimit="10" stroke="#50659b" fill="none" data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path><path d="M42 51.885L32.113 59l3.809-11.471L26 41l12.242-1L42 29l3.758 11L58 41l-9.918 6.529L51.891 59 42 51.885z" stroke-width="2" stroke-miterlimit="10" stroke="#50659b" fill="none" data-name="layer1" stroke-linejoin="round" stroke-linecap="round"></path></svg>
 
               <div>
