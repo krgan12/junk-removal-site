@@ -7,6 +7,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { homeQuery } from "@/sanity/queries/home";
 import Image from "next/image";
 import Link from "next/link";
+import { FaWind } from "react-icons/fa";
 
 export default async function Page() {
 
@@ -121,7 +122,7 @@ export default async function Page() {
                 Affordable Junk Removal In Oakville
               </p>
 
-              <h2 className='mt-5 text-[45px] leading-[1.15] font-md tracking-[-1px]
+              <h2 className='mt-4.5 text-[45px] leading-[1.15] font-md tracking-[-1px]
               text-[#222]'>
                 Flexible Services for your Specific Needs
               </h2>
@@ -155,6 +156,11 @@ export default async function Page() {
                 </li>
               </ul>
 
+          </div>
+
+          <div>
+            {/* Icons */}
+            
           </div>
 
           {/* <div className='relative mt-19 h-[440px] w-[800px] overflow-hidden'>
