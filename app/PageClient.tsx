@@ -12,7 +12,15 @@ import Link from "next/link";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaWind } from "react-icons/fa";
 
-export default async function Page() {
+export default async function Page({
+    col1,
+    col2, 
+    col3
+}: {
+    col1: React.ReactNode,
+    col2: React.ReactNode,
+    col3: React.ReactNode,
+}) {
 
   const homeData = await client.fetch(homeQuery);
 
@@ -194,7 +202,8 @@ export default async function Page() {
 
       <div className="hover:cursor-pointer">
 
-        <HomeImgColl1 />
+        {/* <HomeImgColl1 /> */}
+        {col1}
 
       </div>
 
@@ -244,7 +253,8 @@ export default async function Page() {
 
       <div className="hover:cursor-pointer">
 
-        <HomeImgColl2 />
+        {/* <HomeImgColl2 /> */}
+        {col2}
 
       </div>
       
@@ -253,7 +263,8 @@ export default async function Page() {
       </div>
 
       <div className="hover:cursor-pointer">
-        <HomeImgColl3 />
+        {/* <HomeImgColl3 /> */}
+        {col3}
       </div>
 
       <HomeFooter />
