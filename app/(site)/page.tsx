@@ -114,17 +114,53 @@ export default async function Page() {
 
       </section>
 
-      
 
-      <div className="relative w-1/2 h-screen overflow-hidden">
-        <Image 
-          src={imageUrl2}
-          alt=""
-          fill 
-          className="object-cover"
-        />
-      </div>
 
+       <div className='max-w-[640px] relative ml-61 mt-35'>
+              <p className="uppercase tracking-[5px] text-[15px] font-medium text-[#6f6f6f]">
+                Affordable Junk Removal In Oakville
+              </p>
+
+              <h2 className='mt-5 text-[45px] leading-[1.15] font-md tracking-[-1px]
+              text-[#222]'>
+                Flexible Services for your Specific Needs
+              </h2>
+
+              <p className='mt-5 text-[18px] leading-9 text-[#666]'>
+                <p className='text-[#767676] font-bold'>
+                  Our Services:
+                </p>
+                {/* Leading-7 or ADJUST later on */}
+                {/* <p className='leading-7.5 max-w-[550px]'>Household waste removal, furniture removal, construction cleanup, dump runs, yard waste removal, garbage removal, hot tub removal, piano removal, concrete disposal, clean fill (dirt) disposal, asphalt disposal, roofing disposal, debris removal, bulk landscape material delivery, and more.</p> */}
+
+              </p>
+              <p className='leading-7 max-w-[550px] text-[#666] text-[17px]'>Household waste removal, furniture removal, construction cleanup, dump runs, yard 
+                waste removal, garbage removal, hot tub removal, piano removal, 
+                concrete disposal, clean fill (dirt) disposal, asphalt disposal, roofing 
+                disposal, bulk landscape material delivery, and more.</p>
+              
+              <p className='text-[17.5px] mt-6 font-semibold text-[#767676]'>Flexible options to fit your needs:</p>
+              <ul className='mt-6 space-y-3 pl-6 text-[17.5px] text-[#767676] list-disc'>
+                
+                <li className=''>
+                  <span className='font-bold'>Small to Medium Loads:</span> 6.5 ft pickup truck bed
+                </li>
+
+                <li className=''>
+                 <span className='font-bold'>Medium to Large Loads:</span> 7x12 ft dump trailer or 12–40 yard bins
+                </li>
+
+                <li className=''>
+                  <span className='font-bold'>DIY Option:</span> Ask about our Junk Removal Bin rentals
+                </li>
+              </ul>
+
+          </div>
+
+          {/* <div className='relative mt-19 h-[440px] w-[800px] overflow-hidden'>
+            <Image src={imageUrl2} alt="" fill className="object-cover"/>
+          </div> */}
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div>
 
         <HomeImgColl1 />

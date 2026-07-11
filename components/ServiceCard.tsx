@@ -23,13 +23,6 @@ async function ServiceCard({serviceName}: serviceName) {
 
    const lines = description.split("\n");
 
-//    console.log("Services Data: ", servicesData);
-
-//    console.log("Selected Service: ", selectedService);
-//    console.log("Image URL: ", imageUrl);
-//    console.log("Description: ", description);
-//    console.log("Lines: ", lines);
-
    const formattedServiceName = selectedService?.name?.replace(/_/g, " ").replace(/\b\w/g, (char: string) => char.toUpperCase());
 
   return (
@@ -52,23 +45,15 @@ async function ServiceCard({serviceName}: serviceName) {
         
 
         <h1 className='max-w-[500px] text-center mt-10 text-[26px] leading-[1.1] tracking-[-0.01px] font-normal text-black'>
-        {/* <h1 className='mt-8 text-center text-[25px] leading-[1.35] tracking-[-0.5px] font-normal text-[#222]'> */}
+            
             {formattedServiceName}
         </h1>
-
-        {/* <p className='mt-5 text-[18px] leading-8 text-[#666]'> 
-            {selectedService.description}
-        </p> */}
-
-        {/* <div className='mt-5 mx-auto max-w-[560px] text-left'> */}
         <div className='mt-5 text-left max-w-[275px]'>
             <p className='text-[17.5px] leading-7.5 text-[#666]'>
                 {selectedService.description}
             </p>
         </div>
 
-        {/* <ul className='mt-8 space-y-4 text-[17.5px] leading-8 text-[#666]'> */}
-        {/* <ul className='mt-8 space-y-4 ml-[250px] text-[17.5px] leading-7 text-[#666]'> */}
         <ul className='mt-7.5 space-y-4 ml-[7%] text-[17.5px] leading-7 text-[#666]'>
 
             {selectedService.features.map((feature: any) => (
