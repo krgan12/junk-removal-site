@@ -3,6 +3,7 @@ import HomeFooter from "@/components/HomeFooter";
 import HomeImgColl1 from "@/components/HomeImgColl1";
 import HomeImgColl2 from "@/components/HomeImgColl2";
 import HomeImgColl3 from "@/components/HomeImgColl3";
+import SocialIcons_Home from "@/components/SocialIcons_Home";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { homeQuery } from "@/sanity/queries/home";
@@ -180,7 +181,7 @@ export default async function Page({
           <div className="flex flex-col gap-16 mt-[-10%] ml-[2.5%] relative left-50">
             {/* Icons */}
             <div className="flex items-center gap-4">
-              <svg className="w-15 h-15 text-[#50659b]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer2" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M55.9 46h5M24 46h22.1M46 12H34l-6 10H6L2 36.9 8.7 46H14"></path><path data-name="layer2" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.3 40H62V30h-5.8l-5-10H40v20m16.2-10H40"></path><circle data-name="layer1" cx="19" cy="47" r="5" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle data-name="layer1" cx="51" cy="47" r="5" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
+              <svg className="w-15 h-15 text-[#50659b]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path data-name="layer2" fill="none" stroke="#50659b" strokeLinecap="round" stroke-linejoin="round" stroke-width="2" d="M55.9 46h5M24 46h22.1M46 12H34l-6 10H6L2 36.9 8.7 46H14"></path><path data-name="layer2" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.3 40H62V30h-5.8l-5-10H40v20m16.2-10H40"></path><circle data-name="layer1" cx="19" cy="47" r="5" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><circle data-name="layer1" cx="51" cy="47" r="5" fill="none" stroke="#50659b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
             <div>
 
               <h3 className="font-normal text-[22.5px] ml-5 text-[black]">No Job is Too <span className="text-[30px]">Big</span> or Too <span className="text-[15px]">Small</span></h3>
@@ -211,13 +212,22 @@ export default async function Page({
       </div>
 
       <div>
+
+        <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Contact us for a FREE quote</h1>
+        <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Company Information</h1>
         {/* <MapIcon /> --> for NEXT section */}
         <MapPin className="text-white fill-gray-500"/>
+        <p className="text-black text-[15px]">From Oakville to Brantford to Niagara Region</p>
         <Phone className="fill-gray-500 text-white"/>
+        <p className="text-black text-[15px]">905-781-4046</p>
         <MailIcon className="text-white fill-gray-500"/>
+        <p className="text-[blue] text-[15px] underline">junkbgoneoakville@gmail.com</p>
         <Clock className="fill-gray-500 text-white" />
+        <p className="text-[blue] text-[15px] underline">Open 7 days a week</p>
+        <SocialIcons_Home />
         {/* Div to work on */}
           {form}
+        
       </div>
 
       <div>
