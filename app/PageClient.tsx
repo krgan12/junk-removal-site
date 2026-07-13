@@ -209,24 +209,91 @@ export default async function Page({
 
       </div>
 
-      <div>
+      {/* <div> */}
+      <section className="mx-auto mt-29 flex max-w-[1350px] justify-between">
 
-        <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Contact us for a FREE quote</h1>
-        <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Company Information</h1>
+        {/* <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Contact us for a FREE quote</h1> */}
+
+        {/* <h1 className='text-center text-[35px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>Company Information</h1> */}
         {/* <MapIcon /> --> for NEXT section */}
-        <MapPin className="text-white fill-gray-500"/>
-        <p className="text-black text-[15px]">From Oakville to Brantford to Niagara Region</p>
+        {/* <MapPin className="text-white fill-gray-500"/> */}
+        {/* <p className="text-black text-[15px]">From Oakville to Brantford to Niagara Region</p>
         <Phone className="fill-gray-500 text-white"/>
         <p className="text-black text-[15px]">905-781-4046</p>
         <MailIcon className="text-white fill-gray-500"/>
         <p className="text-[blue] text-[15px] underline">junkbgoneoakville@gmail.com</p>
         <Clock className="fill-gray-500 text-white" />
         <p className="text-[blue] text-[15px] underline">Open 7 days a week</p>
-        <SocialIcons_Home />
+        <SocialIcons_Home /> */}
+
+        <div className="w-[360px] ml-25">
+
+          <h2 className="text-[35px] font-normal text-[#222]">
+            Company Information
+          </h2>
+
+          <div className="mt-9 space-y-6 max-w-[15000px]">
+
+            <div className="flex items-start gap-5 max-w-[10000px]">
+
+              <MapPin size={25} className="text-white fill-gray-500"/>
+
+              <p className="text-[17px]">From Oakville to Brantford to Niagara Region</p>
+
+            </div>
+
+            <div className="flex items-center gap-5">
+
+              <Phone 
+                size={24}
+                className="text-white fill-gray-500"
+              />
+
+              <p className="text-[17px]">905-781-4046</p>
+
+            </div>
+
+            <div className="flex items-center gap-5">
+
+              <Mail size={24} className="text-white fill-gray-500" />
+
+              <a href="mailto:junkbgoneoakville@gmail.com" className="text-[17px] underline text-[#355ca8]">junkbgoneoakville@gmail.com</a>
+
+            </div>
+
+            <div className="flex items-center gap-5">
+
+              <Clock size={24} className="text-white fill-gray-500"/>
+
+              <p className="text-[17px]">Open 7 days a week</p>
+
+            </div>
+            
+            <div className="mt-8"><SocialIcons_Home/></div>
+
+          </div>
+
+        </div>
+
         {/* Div to work on */}
+        <div className="w-[650px] ml-75.5">
+          
+          <h2 className="text-[35px] font-normal text-[#222] leading-tight">Contact us for a FREE quote</h2>
+
+          <p className="mt-6 max-w-[550px] text-[20px] leading-8">
+            Get a free junk removal quote! Tell us your city, nearest 
+            intersection, and what you need removed (example: 1 couch, 
+            10 bags). You can also text the details to&nbsp;
+            <a href="tel:+1-905-781-4046" className="underline text-[#355ca8]">
+              905-781-4046.
+            </a>
+          </p>
+
           {form}
+        </div>
         
-      </div>
+      {/* </div> */}
+      </section>
 
       <div>
          <div className="elfsight-app-b894e184-964e-4b52-a5b2-ceeb63ff37bb" data-elfsight-app-lazy></div>
