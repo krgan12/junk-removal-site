@@ -1,4 +1,3 @@
-// 'use client'
 import HomeFooter from "@/components/HomeFooter";
 import HomeImgColl1 from "@/components/HomeImgColl1";
 import HomeImgColl2 from "@/components/HomeImgColl2";
@@ -10,7 +9,6 @@ import { homeQuery } from "@/sanity/queries/home";
 import { Clock, Mail, MailIcon, MapIcon, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-// import { useState } from "react";
 import { CiDeliveryTruck } from "react-icons/ci";
 import { FaWind } from "react-icons/fa";
 
