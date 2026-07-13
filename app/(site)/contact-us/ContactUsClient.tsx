@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 function ContactUsClient({
   image,
@@ -14,6 +15,7 @@ function ContactUsClient({
 
   const [email, setEmail] = useState("");
   const [emailTouched, setEmailTouched] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
   const SERVICES_OFFSET = 10;
 
@@ -74,7 +76,12 @@ function ContactUsClient({
 
               </textarea>
 
-              <div className='mt-4 h-[55px] w-[304px] border border-[#d9d9d9] bg-white'></div>
+              {/* <div className='mt-4 h-[55px] w-[304px] border border-[#d9d9d9] bg-white'></div> */}
+                 <div className="mt-4">
+                    <HCaptcha sitekey={`${process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}`}
+                      onVerify={(token) => {console.log(token); setCaptchaToken(token)}}
+                    />
+                  </div>
               
               <button type='submit' className='hover:cursor-pointer mt-6 h-[48px] w-[120px] bg-[#e32726] text-[18px] font-normal text-white transition-colors hover:bg-[#cf201f]'>Submit</button>
             </div>

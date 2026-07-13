@@ -1,4 +1,5 @@
 'use client'
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 import { useState } from "react"
 
 export default function PageServer() {
@@ -6,7 +7,10 @@ export default function PageServer() {
     const [email, setEmail] = useState("");
     const [emailTouched, setEmailTouched] = useState(false);
 
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+
     return (
+
         <div>
 
          <form className='mt-10 flex w-full flex-col max-w-[610px]'>
@@ -38,11 +42,16 @@ export default function PageServer() {
 
               </textarea>
 
-              <div className='mt-4 h-[55px] w-[304px] border border-[#d9d9d9] bg-white'></div>
+              {/* <div className='mt-4 h-[55px] w-[304px] border border-[#d9d9d9] bg-white'></div> */}
 
               {/* <div className="h-captcha" data-sitekey="e38e91b6-41b8-443c-85b0-3490aa4ab272"></div>
               <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
              */}
+              <div className="mt-4">
+                <HCaptcha sitekey={`${process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}`}
+                  onVerify={(token) => {console.log(token); setCaptchaToken(token)}}
+                />
+              </div>
               
               <button type='submit' className='hover:cursor-pointer mt-6 h-[48px] w-[120px] bg-[#e32726] text-[18px] font-normal text-white transition-colors hover:bg-[#cf201f]'>Submit</button>
             </div>
