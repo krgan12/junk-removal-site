@@ -7,6 +7,28 @@ function Header() {
 
   const pathname = usePathname();
 
+  const [scrolled, setScrolled] = useState(false);
+
+  // To make a header change bg-colours, React state can simply WATCH a browser's 
+  // scroll position, meaning it will automatically work on EVERY 
+  // single page on your site.
+
+  // Listen for scrolling:
+  useEffect(() => {
+    
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll(); // checks initial position
+
+    return () => window.removeEventListener("scroll", handleScroll);
+
+  }, []);
+
+
   return (
     // fixed is RESPONSIBLE for the transparent header
     <div className='fixed z-50 border border-red-500 bg-none w-full h-[12.56%] pt-9 space-x-10 pl-20 items-center text-center'>
