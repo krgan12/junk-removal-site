@@ -9,7 +9,7 @@ function Header() {
 
   return (
     // fixed is RESPONSIBLE for the transparent header
-    <div className='fixed z-50'>
+    <div className='fixed z-50 bg-white w-full h-[12.56%]'>
       <a href="/"><h1 className='hover:cursor-pointer'>Junk B Gone - Junk Removal Service</h1> </a>&nbsp;
       <Link href="/" className={pathname === '/' ? 'text-red-500': 'text-black'}>Home</Link> &nbsp;
       <Link href="/contact-us" className={pathname === '/contact-us' ? 'text-red-500': 'text-black'}>Contact Us</Link>&nbsp;
