@@ -3,6 +3,7 @@ import HomeImgColl2 from "@/components/HomeImgColl2";
 import HomeImgColl3 from "@/components/HomeImgColl3";
 import PageClient from "../PageClient";
 import PageServer from "../PageServer";
+import HomeFooter from "@/components/HomeFooter";
 
 export default function page() {
   return (
@@ -11,6 +12,7 @@ export default function page() {
       col2={<HomeImgColl2 />}
       col3={<HomeImgColl3 />}
       form={<PageServer />}
+      HomeFooter={<HomeFooter />}
     />
   )
 }

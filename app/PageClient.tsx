@@ -16,12 +16,14 @@ export default async function Page({
     col1,
     col2, 
     col3,
-    form
+    form,
+    HomeFooter
 }: {
     col1: React.ReactNode,
     col2: React.ReactNode,
     col3: React.ReactNode,
     form: React.ReactNode,
+    HomeFooter: React.ReactNode,
 }) {
 
   const homeData = await client.fetch(homeQuery);
@@ -367,7 +369,8 @@ export default async function Page({
         {col3}
       </div>
 
-      <HomeFooter />
+      {/* <HomeFooter /> */}
+      {HomeFooter}
     </div>
   );
 }

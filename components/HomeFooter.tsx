@@ -1,15 +1,36 @@
 import React from 'react'
 import SocialIcons_Home from './SocialIcons_Home'
+import { homeQuery } from '@/sanity/queries/home'
+import { client } from '@/sanity/lib/client';
+import { urlFor } from '@/sanity/lib/image';
+import Image from 'next/image';
 
-function HomeFooter() {
+async function HomeFooter() {
+
+
+  const homeData = await client.fetch(homeQuery);
+
+  // SEARCH BY CUSTOM NAME
+  const selectedImage = homeData.find(
+    (item: any) => item.name == "Footer"
+  )
+
+  const imageUrl = selectedImage?.image?urlFor(selectedImage.image).width(1000).url() : "";
+
   return (
     <div className='bg-black'>
       
       {/* Small Image - from back-end (named: Footer) */}
 
-      <img src="" alt='text'/>
+      <Image 
+        src={imageUrl}
+        alt={homeData?.name}
+        fill 
+        className='object-contain'
+      />
 
       {/* Company name (Left Hand Side) */}
+      <br /><br />
 
       <h3 className='text-white'>JunkBGone - Junk Removal Service</h3>
 
