@@ -370,7 +370,9 @@ export default async function Page({
       </div>
 
       {/* <HomeFooter /> */}
-      {HomeFooter}
+      <div className="">
+        {HomeFooter}
+      </div>
     </div>
   );
 }

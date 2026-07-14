@@ -26,13 +26,13 @@ function SocialIcons_Home() {
         <a className='' href="">
             <FaTiktok className='' />
         </a>
-        <a className='bg-white' href="">
+        <a className='text-[#de0000]' href="">
             <BsHouse />
         </a>
         <a className='text-[#de0000]' href="">
             <BsYelp />
         </a>
-        <a className='bg-white' href="">
+        <a className='' href="">
             <FaGoogle />
         </a>
     </div>
