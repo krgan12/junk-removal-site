@@ -31,7 +31,7 @@ function ServicesFooter() {
 
           <p className='py-8 pt-0 text-[17.5px] text-[#666]'>© 2026 JunkBGone - Junk Removal Service</p>
 
-          <SocialIcons_Home />
+          <div className='relative left-20'><SocialIcons_Home /></div>
 
         </div>
 
