@@ -82,25 +82,33 @@ async function HomeFooter() {
 
         <div className='flex justify-between items-end gap-8'>
 
-          {/* Left Side */}
-          <div className='flex flex-col'>
+          
+          <div className='flex flex-col relative'>
 
             <div className='flex items-center gap-6'>
 
               <Image 
                 src={imageUrl}
                 alt={""}
-                fill
-                className='object-cover'
+                // fill
+                height={500}
+                width={90}
+                className='w-[] h-[] ml-50'
               />
 
-              <h2 className='text-[25px] max-w-[350px] tracking-[1.1px] leading-8 font-normal text-[white]'>JunkBGone - Junk Removal Service</h2>
+              <h2 className='text-[25px] max-w-[300px] leading-8 font-normal text-[white]'>JunkBGone - Junk Removal Service</h2>
 
             </div>
 
+            <div className='mt-8 ml-50 relative'>
+              <SocialIcons_Home />
+            </div>
+
+            <p className='pl-50 mt-5.5 text-[#666] text-[17.5px] font-normal'>© 2026 JunkBGone - Junk Removal Service</p>
+
           </div>
 
-          {/* Right Side */}
+          
           <div>
 
           </div>
