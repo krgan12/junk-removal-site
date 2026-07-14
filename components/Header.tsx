@@ -31,7 +31,10 @@ function Header() {
 
   return (
     // fixed is RESPONSIBLE for the transparent header
-    <div className='fixed z-50 border border-red-500 bg-none w-full h-[12.56%] pt-9 space-x-10 pl-20 items-center text-center'>
+    <div className={`fixed z-50 w-full h-[12.56%] pt-9 space-x-10 pl-20 
+      items-center text-center transition-all duration-300
+      ${scrolled ? "bg-white" : "bg-none"}
+    `}>
       
       <Link href="/" className='hover:cursor-pointer space-x-70 text-[24px] right-55.5 relative'>
         JunkBGone - Junk Removal Service
