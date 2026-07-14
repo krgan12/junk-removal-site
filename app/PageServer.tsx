@@ -9,16 +9,72 @@ export default function PageServer() {
 
     const [captchaToken, setCaptchaToken] = useState<string | null>(null);
 
+    const [name, setName] = useState("");
+
+    const [phoneNumber, setPhoneNumber] = useState("");
+
+    const [message, setMessage] = useState("");
+
+    const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    const [error, setError] = useState("");
+
+    // Prevent submitting form until verified via Captcha
+   
+   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+      
+      e.preventDefault();
+
+      // Check captcha token
+      if (!captchaToken) {
+        alert("Please complete the captcha");
+        return;
+      }
+
+      // Check email format
+      if (!EMAIL_REGEX.test(email.trim())) {
+        alert("Please enter a valid e-mail address.");
+        return;
+      }
+
+      const response = await fetch('/api/contact', {
+        method: "POST", 
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          captchaToken,
+          email,
+          name,
+          phoneNumber,
+          message
+        }),
+
+      })
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        alert(data.error);
+        return;
+      }
+
+      alert("Form submitted")
+      window.location.href = "/"
+
+    }
+
+
     return (
 
         <div>
 
-         <form className='mt-10 flex w-full flex-col max-w-[610px]'>
+         <form className='mt-10 flex w-full flex-col max-w-[610px]' onSubmit={handleSubmit}>
 
             <div className='mb-7'>
               
               <label className='mb-2 block text-[18px] font-normal text-[black]' htmlFor="">Name</label>
-              <input placeholder='Enter your name' className='h-[50px] w-full border rounded-sm border-[#dddddd] px-4 text-[17px] placeholder:text-[#777] outline-none transition-colors focus:border-[#bdbdbd]' />
+              <input onChange={(e) => setName(e.target.value)} placeholder='Enter your name' className='h-[50px] w-full border rounded-sm border-[#dddddd] px-4 text-[17px] placeholder:text-[#777] outline-none transition-colors focus:border-[#bdbdbd]' />
 
               <label className="mb-2 mt-4 block text-[18px]">E-mail <span className='text-red-600'>*</span></label>
               <input
@@ -33,10 +89,10 @@ export default function PageServer() {
               )}
 
               <label className="mb-2 mt-4 block text-[18px]">Phone</label>
-              <input placeholder='Enter your phone number' className='h-[50px] w-full border rounded-sm border-[#dddddd] px-4 text-[17px] placeholder:text-[#777] outline-none transition-colors focus:border-[#bdbdbd]' />
+              <input onChange={(e) => setPhoneNumber(e.target.value)} placeholder='Enter your phone number' className='h-[50px] w-full border rounded-sm border-[#dddddd] px-4 text-[17px] placeholder:text-[#777] outline-none transition-colors focus:border-[#bdbdbd]' />
 
               <label className="mb-2 mt-4 block text-[18px]">Message</label>
-              <textarea rows={2} placeholder='Enter your message' className='min-h-[45px] w-full
+              <textarea onChange={(e) => setMessage(e.target.value)} rows={2} placeholder='Enter your message' className='min-h-[45px] w-full
                border rounded-sm border-[#dddddd] px-4 py-3 text-[17px] placeholder:text-[#777]
               outline-none transition-colors focus:border-[#bdbdbd]'>
 
@@ -49,7 +105,8 @@ export default function PageServer() {
              */}
               <div className="mt-4">
                 <HCaptcha sitekey={`${process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}`}
-                  onVerify={(token) => {console.log(token); setCaptchaToken(token)}}
+                  onVerify={(token) => {setCaptchaToken(token)}}
+                  onExpire={() => setCaptchaToken(null)}
                 />
               </div>
               

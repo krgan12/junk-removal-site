@@ -306,7 +306,31 @@ export default async function Page({
 
       </div>
       
-      <div>
+      <div className="mx-auto mt-29 max-w-[1350px] justify-center">
+            
+            <div className="w-[1250px] items-center">
+
+              <h1 className="items-center justify-center">About Us</h1>
+
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path data-name="layer1" d="M43.2 48.1L36 44.1M36 44.1L18 52M36 44.1V3M18 52L2 44.1V4L18 11.9M18 52V11.9M18 11.9L36 3M36 3L54 11.9V32.2" stroke="#202020" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-name="layer2" d="M52 32C49.3478 32 46.8043 33.0536 44.9289 34.9289C43.0536 36.8043 42 39.3478 42 42C42 51 52 61 52 61C52 61 62 51 62 42C62 39.3478 60.9464 36.8043 59.0711 34.9289C57.1957 33.0536 54.6522 32 52 32Z" stroke="#202020" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path data-name="layer3" d="M52 45C53.6569 45 55 43.6569 55 42C55 40.3431 53.6569 39 52 39C50.3431 39 49 40.3431 49 42C49 43.6569 50.3431 45 52 45Z" stroke="#202020" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" aria-describedby="desc" role="img">
+  <path stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" d="M41.713 48.744c-1.968-1.476-1.71-3.069-1.71-4.244v-4m-16 1v3c0 1.285.425 3.083-2.194 4.67" data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <path stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" d="M37.601 42.5a16.786 16.786 0 0 0 7.168-10.135c3.026-.037 4.234-2.931 4.234-6.937 0-1.994 0-4.928-3-4.928v-2m-29 0v2.006c-2-.006-3 2.994-3 4.988 0 4.006 1.391 7.006 4.436 7.006h.002a15.21 15.21 0 0 0 7.17 10m20.392-24v-2c0-10.4-7.373-14-14-14s-15 3.517-15 13.916V18.5c12 0 13-8 21-8 7.459 0 8 8 8 8z" data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <path stroke-width="2" stroke-miterlimit="10" stroke="#202020" fill="none" d="M14.003 51.5c-12.61 2-12.001 11-12.001 11h30L21.809 49.17c-1.458.885-3.856 1.703-7.806 2.33zm36 0c-4.436-.74-6.91-1.72-8.29-2.756L32.002 62.5h30s0-9-12-11z" data-name="layer1" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title" aria-describedby="desc" role="img">
+  <path data-name="layer2" d="M10.3 29l-2.2-6.1a2.4 2.4 0 0 1 1.4-3.1L50.1 5.1a2.4 2.4 0 0 1 3.1 1.4l8.7 24a2.4 2.4 0 0 1-1.4 3.1L50 37.4m-39.9-9.2L55 11.8m-8.3 9.8l4.5-1.6" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path>
+  <rect data-name="layer1" x="2" y="29" width="48" height="30" rx="2.4" ry="2.4" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></rect>
+  <path data-name="layer1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" d="M10 43h14m12-6h6M10 51h2m8 0h2m8 0h2m8 0h2" stroke-linejoin="round" stroke-linecap="round"></path>
+</svg>
+
+            </div>
 
       </div>
 
