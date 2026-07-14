@@ -44,38 +44,71 @@ async function HomeFooter() {
 
     //   <p className='text-gray-500'>© 2026 JunkBGone - Junk Removal Service</p>
     // </div>
-    <footer>
-    <div className='mx-auto max-w-full h-[1200px]'>
-    {/* <div className='flex items-end gap-8 bg-black'> */}
-    <div className='flex justify-between items-end bg-black gap-8'>
 
-      <div className='relative h-[95px] w-[105px] overflow-hidden rounded-sm'>
+    
+    // <footer className='bg-black'>
+    // <div className='mx-auto max-w-full h-[1200px] px-10 py-20'>
+    // <div className='flex justify-between items-end gap-8'>
+    
+    //   <div className='relative h-[130px] w-[125px] overflow-hidden rounded-sm'>
         
-        <Image 
-          src={imageUrl}
-          alt={""}
-          fill
-          className='object-cover'
-        />
+    //     <Image 
+    //       src={imageUrl}
+    //       alt={""}
+    //       fill
+    //       className='object-cover'
+    //     />
+    //   </div>
+    //     <div className=''>
 
-        {/* Company Name */}
-        <div className='relative'>
-          <h2 className='text-[42px] tracking-[1px] leading-none font-normal text-[red]'>JunkBGone</h2>
+    //       <h2 className='text-[25px] max-w-[350px] tracking-[1.1px] leading-8 font-normal text-[white]'>JunkBGone - Junk Removal Service</h2>
 
-          <p className='mt-2 text-[22px] text-[#666]'>Junk Removal Service</p>
+    //   </div>
+    //   <div>
+    //     <p className='text-[18px] font-normal text-[#666]'>From Oakville to Brantford to Niagara Region</p>
+    //     <a href="tel:+1-905-781-4046" className='hover:cursor-pointer'><p className='text-[18px] font-normal text-[#666]'>905-781-4046</p></a>
+    //     <p className='text-[18px] font-normal underline text-[#355ca8]'>junkbgoneoakville@gmail.com</p>
+    //   </div>
+
+    //     </div>
+
+       
+    //   </div>
+    // </footer>
+
+    <footer className='bg-black'>
+
+      <div className='mx-auto max-w-full px-10 py-20'>
+
+        <div className='flex justify-between items-end gap-8'>
+
+          {/* Left Side */}
+          <div className='flex flex-col'>
+
+            <div className='flex items-center gap-6'>
+
+              <Image 
+                src={imageUrl}
+                alt={""}
+                fill
+                className='object-cover'
+              />
+
+              <h2 className='text-[25px] max-w-[350px] tracking-[1.1px] leading-8 font-normal text-[white]'>JunkBGone - Junk Removal Service</h2>
+
+            </div>
+
+          </div>
+
+          {/* Right Side */}
+          <div>
+
+          </div>
+
         </div>
 
-
       </div>
 
-      <div className='space-y-4 text-center items-start'>
-        <p className='text-[18px] font-normal text-[#666]'>From Oakville to Brantford to Niagara Region</p>
-        <a href="tel:+1-905-781-4046" className='hover:cursor-pointer'><p className='text-[18px] font-normal text-[#666]'>905-781-4046</p></a>
-        <p className='text-[18px] font-normal underline text-[#355ca8]'>junkbgoneoakville@gmail.com</p>
-      </div>
-
-        </div>
-      </div>
     </footer>
   )
 }
