@@ -21,7 +21,7 @@ async function HomeImgColl3() {
             <div key={image._key} className='relative flex-1 h-[370px]'>
                 <Image 
                     src={urlFor(image).url()}
-                    alt={image.name}
+                    alt={image.name || "Image"}
                     fill
                     className='object-cover'
                 />

@@ -18,7 +18,7 @@ async function ContactUsFooter() {
       <div className='relative h-[429px] overflow-hidden'>
         <Image 
           src={imageUrl} 
-          alt=''
+          alt={FooterData?.name || "Image"}
           fill
           className='object-cover object-[center_100%] -z-10' 
         />

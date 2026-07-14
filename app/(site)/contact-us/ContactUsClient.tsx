@@ -141,8 +141,6 @@ function ContactUsClient({
           </div>
 
           <div className='relative mt-19 h-[440px] w-[800px] overflow-hidden'>
-            {/* <Image src="" alt='' fill className='object-cover' /> */}
-            {/* <ContactUsImage /> */}
             {image}
           </div>
 

@@ -40,9 +40,6 @@ export default async function Page({
 
   const imageUrl2 = selectedImage?.image?urlFor(selectedImage2.image).width(500).url() : "";
 
-  // const [email, setEmail] = useState("");
-  // const [emailTouched, setEmailTouched] = useState(false);
-
   const MIDDLE_DIVIDER = 20;
 
   return (
@@ -120,7 +117,7 @@ export default async function Page({
         <div className="relative w-1/2 h-screen overflow-hidden">
           <Image
             src={imageUrl}
-            alt=""
+            alt={selectedImage || "Image"}
             fill
             className="object-cover"
           />
@@ -175,7 +172,7 @@ export default async function Page({
           </div>
             
           <div className="relative mt-[-28.5%] ml-218 h-[700px] w-[580px] overflow-hidden">
-            <Image src={imageUrl2} alt="" fill className="object-cover"/>
+            <Image src={imageUrl2} alt={selectedImage2 || "Image"} fill className="object-cover"/>
           </div>
 
           <div className="flex flex-col gap-16 mt-[-10%] ml-[2.5%] relative left-50">
