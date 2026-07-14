@@ -76,7 +76,7 @@ async function HomeFooter() {
     //   </div>
     // </footer>
 
-    <footer className='bg-black'>
+    <footer className='bg-[#131416]'>
 
       <div className='mx-auto max-w-full px-10 py-20'>
 
@@ -104,13 +104,15 @@ async function HomeFooter() {
               <SocialIcons_Home />
             </div>
 
-            <p className='pl-50 mt-5.5 text-[#666] text-[17.5px] font-normal'>© 2026 JunkBGone - Junk Removal Service</p>
-
+            <p className='pl-50 mt-5.5 text-[#78797a] text-[17.5px] font-light'>© 2026 JunkBGone - Junk Removal Service</p>
+            {/* #68696a */}
           </div>
 
           
-          <div>
-
+          <div className='flex flex-col relative right-200 bottom-25 leading-8.5'>
+            <p className='text-[18px] font-normal leading-7.5 text-[#78797a] max-w-[250px]'>From Oakville to Brantford to Niagara Region</p>
+            <a href="tel:+1-905-781-4046"><p className='text-[18px] leading-12 font-normal text-[#78797a]'>905-781-4046</p></a>
+            <a href="mailto:junkbgoneoakville@gmail.com"><p className='text-[18px] font-normal underline text-[#6a7aa2]'>junkbgoneoakville@gmail.com</p></a>
           </div>
 
         </div>
