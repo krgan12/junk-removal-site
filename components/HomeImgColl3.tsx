@@ -12,7 +12,7 @@ async function HomeImgColl3() {
     const gallery = homeData.find(
         (item: any) => item.name === "Images5"
     )
-
+    
     const images = [...gallery.gallery]
 
   return (
