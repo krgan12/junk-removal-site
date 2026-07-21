@@ -18,6 +18,8 @@ async function page() {
   const imageUrl = selectedImage?.image?urlFor(selectedImage.image).width(1000).url() : "";
 
   const TOP_DIVIDER = 22;
+
+  const SECTION_DIVIDER = 25;
   
   return (
     <div>

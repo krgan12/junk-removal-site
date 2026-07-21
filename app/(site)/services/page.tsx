@@ -30,9 +30,6 @@ function page() {
 
               <p className='mt-5 text-[20px] text-[black] ml-[6%]'>From single-item pickups to full estate cleanouts, JunkBGone handles it all. Fast, affordable, and eco-friendly junk removal across the Greater Oakville area.</p>
 
-            {/* <div className='mt-20 space-y-[32px]'> */}
-            {/* <div className='mt-20 grid grid-cols-4 gap-x-6 -ml-34'> */}
-            {/* <div className='mt-20 grid grid-cols-4 gap-x-6 relative left-[-100px]'> */}
             <div className='mt-13 grid grid-cols-4 gap-x-6 relative left-[40px]'>
 
               <div>
