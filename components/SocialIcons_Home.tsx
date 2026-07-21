@@ -14,7 +14,6 @@ function SocialIcons_Home() {
     font-normal
     transition-all 
     duration-300
-    hover:text-[#db2424]
     hover:-translate-y-1
     `
 
@@ -24,6 +23,21 @@ function SocialIcons_Home() {
     transition-all 
     duration-300
     hover:text-[#db2424]
+    hover:-translate-y-1
+    `
+
+    const iconStyle21 = `
+    text-[#50659b]
+    w-[20]
+    transition-all 
+    duration-300
+    hover:-translate-y-1
+    `
+     const iconStyle22 = `
+    text-[#50659b]
+    w-[20]
+    transition-all 
+    duration-300
     hover:-translate-y-1
     `
 
@@ -43,10 +57,10 @@ function SocialIcons_Home() {
             <Facebook className={`${iconStyle}`}/>
         </a>
         <a className='text-[purple]' href="">
-            <InstagramIcon className={iconStyle2} />
+            <InstagramIcon className={iconStyle21} />
         </a>
         <a className='' href="">
-            <FaTiktok className={iconStyle} />
+            <FaTiktok className={iconStyle22} />
         </a>
         <a className='text-[#de0000]' href="">
             <BsHouse className={iconStyle3}/>
