@@ -39,7 +39,6 @@ function ContactUsClient({
         <section id='quote' className='mx-auto max-w-[610px]' style={{paddingTop: `${HEADER_OFFSET}vh`}}>
         </section>
 
-        {/* <div className='mx-auto flex max-w-[610px] flex-col items-center'> */}
         <div className='mx-auto flex flex-col items-center'>
           
           <h1 className='text-center text-[44px] leading-[1.15] font-normal tracking-[-1px] text-[#222]'>JunkBGone Junk Removal - Get a free Quote</h1>
