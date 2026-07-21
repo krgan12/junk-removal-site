@@ -224,7 +224,7 @@ async function page() {
 
               <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
 
-                <h3 className='text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal Grimsby, Lincoln & Beamsville</h3>
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal Grimsby, Lincoln & Beamsville</h3></a>
 
                 <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[300px]'>
                   JunkBGone provides junk removal in Grimsby, Lincoln and Beamsville for everything from single items to full truckloads. Construction waste, appliances, furniture, yard debris — we take it all.
@@ -234,7 +234,7 @@ async function page() {
 
               <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
 
-                <h3 className='text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal St. Catharines, Thorold & Wellend</h3>
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal St. Catharines, Thorold & Wellend</h3></a>
 
                 <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center'>
                   Our service area reaches into St. Catharines and the Niagara Region. Whether you need a hot tub removed, a garage cleaned out, or construction debris hauled away, Junk2Go has you covered.
