@@ -34,7 +34,7 @@ export default function SiteLayout({
         {children} 
         {/* Footer is different for ALL pages */}
       </body>
-    </>
+    </>   
     // </html>
   );
 }
