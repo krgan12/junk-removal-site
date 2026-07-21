@@ -68,9 +68,6 @@ async function page() {
           src={imageUrl}
           alt={selectedImage || "Service Area Img"}
           fill
-          // width={100}
-          // height={100}
-          // className="w-240 h-240 object-contain"
           className='object-cover'
         />
         </div>
