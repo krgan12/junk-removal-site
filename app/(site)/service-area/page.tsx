@@ -90,24 +90,43 @@ async function page() {
               We're open 7 days a week and ready to help.
             </p>
 
-            <div className='mt-20 grid grid-cols-3 gap-8'>
+            <div className='mt-10 grid grid-cols-3 gap-8'>
 
-              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 min-h-[360px]'>
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
 
-                <h3 className='text-[30px] leading-tight text-[#50659b] underline font-semibold'>Junk Removal Oakville</h3>
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Oakville</h3></a>
 
-                <p className='mt-6 text-center text-[17px] leading-8 text-[#666] text-center'>
-                  We proudly serve all Oakville neighbourhoods including Downtown Oakville, South Oakville, Mid Oakville, and North Oakville. 
-                  Whether it's a garage cleanout, appliance removal, or full estate cleanout, we got you covered.
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[250px]'>
+                  We serve all Oakville neighbourhoods including Downtown Oakville, South Oakville, Mid Oakville, and North Oakville. 
+                  Whether it's a garage cleanout, appliance removal, or full estate cleanout; we got you covered.
                 </p>
 
-                
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Stoney Creek</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[300px]'>
+                  Need junk removal in Stoney Creek? We handle household junk, furniture, appliances, yard waste, and construction debris for homes and businesses across Stoney Creek and the surrounding area.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Ancaster</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center'>
+                  From basement cleanouts to hot tub removal, JunkBGone provides affordable junk removal in Ancaster. Our team is insured, on time, and ready to haul away whatever you need gone.
+                </p>
+
               </div>       
 
 
             </div>
 
-            <div className='mt-100 gap-10 flex'>
+            <div className='mt-10 gap-5 flex'>
                   <Link href="/contact-us">
                       <button className='h-[46px] w-[165px] bg-[#da2424] text-white text-[16px] transition-colors hover:bg-[#cf201f]
                       hover:cursor-pointer'
@@ -115,11 +134,130 @@ async function page() {
                     </button>
                   </Link>
                   <Link href="/contact-us">
-                    <button className='h-[46px] w-[165px] bg-[#da2424] text-white text-[16px] transition-colors hover:bg-[#cf201f]
+                    <button className='h-[46px] w-[165px] bg-[#102355] text-white text-[16px] transition-colors hover:bg-[#162454]
                       hover:cursor-pointer'
                     >Free Estimates</button>
                   </Link>
-                </div>
+            </div>
+
+            <div className='mt-30 grid grid-cols-3 gap-8'>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Dundas</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[250px]'>
+                  Serving Dundas for residential and commercial junk removal. Whether you're renovating, downsizing, or just decluttering, we'll take care of the heavy lifting and disposal.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Burlington</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[300px]'>
+                  JunkBGone is proud to offer junk removal services in Burlington. Furniture removal, garbage removal, estate cleanouts, construction waste — we handle it all at the best prices in the area.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Hamilton</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center'>
+                  Looking for junk removal in Hamilton? We provide fast, eco-friendly service for homeowners and businesses. From single-item pickups to full property cleanouts, no job is too big or too small.
+                </p>
+
+              </div>       
+
+
+            </div>
+
+            <div className='mt-30 grid grid-cols-3 gap-8'>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Milton</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[250px]'>
+                  Our junk removal service extends to Milton and the surrounding area. We remove furniture, appliances, electronics, yard waste, renovation debris, and more — with flexible scheduling that works around you.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Brantford</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[300px]'>
+                  Junk2Go serves Brantford with the same fast, affordable service we're known for in Hamilton. Household junk, construction debris, estate cleanouts, and commercial jobs — all handled professionally.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Caledonia</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center'>
+                  Need junk removed in Caledonia? We offer pickup and hauling for residential and commercial properties. Tell us what you need gone and we'll give you a free, no-obligation quote.
+                </p>
+
+              </div>       
+
+
+            </div>
+
+            <div className='mt-30 grid grid-cols-3 gap-8'>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <a href="/"><h3 className='hover:text-[#7e8db4] text-[23px] leading-tight text-[#566b9e] underline font-black'>Junk Removal Cayuga</h3></a>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[250px]'>
+                  We're happy to serve Cayuga and Haldimand County for junk removal, dump runs, and property cleanouts. Same great service, same affordable pricing.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <h3 className='text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal Grimsby, Lincoln & Beamsville</h3>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center max-w-[300px]'>
+                  JunkBGone provides junk removal in Grimsby, Lincoln and Beamsville for everything from single items to full truckloads. Construction waste, appliances, furniture, yard debris — we take it all.
+                </p>
+
+              </div>
+
+              <div className='flex flex-col items-center bg-[#f7f7f7] px-10 py-12 max-h-[390px] max-w-[420px]'>
+
+                <h3 className='text-[23px] leading-tight text-[#50659b] underline font-black text-center'>Junk Removal St. Catharines, Thorold & Wellend</h3>
+
+                <p className='mt-6 text-center text-[17px] leading-7 text-[#666] text-center'>
+                  Our service area reaches into St. Catharines and the Niagara Region. Whether you need a hot tub removed, a garage cleaned out, or construction debris hauled away, Junk2Go has you covered.
+                </p>
+
+              </div>       
+
+
+            </div>
+
+             <div className='mt-15 gap-5 flex'>
+                  <Link href="/contact-us">
+                      <button className='h-[46px] w-[165px] bg-[#da2424] text-white text-[16px] transition-colors hover:bg-[#cf201f]
+                      hover:cursor-pointer'
+                      >Book Today!
+                    </button>
+                  </Link>
+                  <Link href="/contact-us">
+                    <button className='h-[46px] w-[165px] bg-[#102355] text-white text-[16px] transition-colors hover:bg-[#162454]
+                      hover:cursor-pointer'
+                    >Free Estimates</button>
+                  </Link>
+            </div>
 
           </div>
 
