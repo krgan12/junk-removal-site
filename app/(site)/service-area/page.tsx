@@ -71,6 +71,22 @@ async function page() {
           className='object-cover'
         />
         </div>
+
+        <section id='quote' className='mx-auto max-w-[1350px] justify-between items-center' style={{paddingTop: `${SECTION_DIVIDER}vh`}}>
+
+          <div className='flex flex-col items-center'>
+
+            <p className='uppercase tracking-[5px] text-[16.7px] font-medium text-[#6f6f6f]'>
+              Same Day Junk Removal. JunkBGone is the go-to junk removal service.
+            </p>
+
+            <h2 className='mt-5 max-w-[2000px] text-center text-[48px] leading-[1.12] 
+            tracking-[-1.3px] font-normal text-[#222]'>Service Areas - Oakville & Surrounding Communities</h2>
+
+          </div>
+
+        </section>
+
         <ServicesFooter />
       </section>
     </div>
