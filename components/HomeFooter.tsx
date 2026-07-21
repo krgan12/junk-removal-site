@@ -23,7 +23,6 @@ async function HomeFooter() {
       <div className='mx-auto max-w-full px-10 py-20'>
 
         <div className='flex justify-between items-end gap-8'>
-
           
           <div className='flex flex-col relative'>
 
